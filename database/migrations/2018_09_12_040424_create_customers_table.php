@@ -26,6 +26,8 @@ class CreateCustomersTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('available_ads');
+            $table->boolean('do_not_sms');
+            $table->boolean('do_not_email');
             $table->timestamps();
         });
     }

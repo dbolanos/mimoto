@@ -29,4 +29,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the client that owns the user.
+     */
+    public function cliente()
+    {
+        return $this->hasOne('App\Cliente');
+    }
 }

@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Crear Usuario y Cliente
+Route::get('cliente-registro',      ['as' => 'cliente.registro'           , 'uses'  => 'CustomerController@customerRegister']);
