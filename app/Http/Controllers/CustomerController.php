@@ -16,9 +16,9 @@ class CustomerController extends Controller
 
         $provinces = Province::all();
 
-        $cantons = Canton::all();
+        $cantons = Canton::where('province_id', 1)->get();
 
-        $districts = District::all();
+        $districts = District::where('canton_id', 101)->get();
 
         //dd($provinces, $cantons, $districts);
 

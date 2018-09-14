@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <script src="{{ asset('js/customerRegister.js') }}" defer></script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -87,7 +88,7 @@
                             <label for="province" style="color:black" class="col-md-4 col-form-label text-md-right">{{ __('Provincia') }}</label>
 
                             <div class="col-md-6">
-                                <select id="province"  style="border: 2px solid #555" class="form-control" name="province">
+                                <select id="province"  style="border: 2px solid #555" class="form-control"  name="province">
                                     @foreach($provinces as $province)
                                         <option value="{{ $province->id }}"> {{ $province->name }} </option>
                                     @endforeach
