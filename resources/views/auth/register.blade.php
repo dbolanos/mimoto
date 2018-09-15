@@ -121,10 +121,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Otras señas') }}</label>
+                            <label for="otras_sennas" class="col-md-4 col-form-label text-md-right">{{ __('Otras señas') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="otras_sennas" type="text" class="form-control" name="otras_sennas" required>
                             </div>
                         </div>
 
