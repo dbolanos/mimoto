@@ -1,80 +1,8 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>MiMoto - Principal</title>
-    <meta name="description" content="Compra y venta de motocicletas en Costa Rica. Cuadraciclos y Motos">
-    <meta name="author" content="MiMoto">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('layouts.master')
+@section('title','Principal')
+@section('contain')
 
-    <!-- Styles -->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
-    <link href="{{ asset('source/bootstrap-3.3.6-dist/css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('source/font-awesome-4.5.0/css/font-awesome.css') }}" rel="stylesheet">
-
-</head>
-<body>
-<!-- Header -->
-<div class="allcontain">
-    <div class="header">
-        <ul class="socialicon">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-        </ul>
-        <ul class="givusacall">
-            <li>Give us a call : +66666666 </li>
-        </ul>
-        <ul class="logreg">
-            <li><a href="#">Iniciar Sesion</a> </li>
-            <li><a href="#"><span class="register">Registro</span></a></li>
-        </ul>
-    </div>
-    <!-- Navbar Up -->
-    <nav class="topnavbar navbar-default topnav">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
-                    <span class="sr-only"> Toggle navigaion</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand logo" href="#"><img src="image/logo1.png" alt="logo"></a>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="upmenu">
-            <ul class="nav navbar-nav" id="navbarontop">
-                <li class="active"><a href="#">HOME</a> </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdowncostume">
-                        <li><a href="#">Sport</a></li>
-                        <li><a href="#">Old</a></li>
-                        <li><a href="#">New</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DEALERS <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdowncostume">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="3">3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-
-                </li>
-                <button><span class="postnewcar">POST NEW CAR</span></button>
-            </ul>
-        </div>
-    </nav>
-</div>
-<!--_______________________________________ Carousel__________________________________ -->
+<!-- Start Carousel Section -->
 <div class="allcontain">
     <div id="carousel-up" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner " role="listbox">
@@ -82,8 +10,8 @@
                 <img src="image/oldcar.jpg" alt="oldcar">
                 <div class="carousel-caption">
                     <h2>Porsche 356</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur ,<br>
-                        sed do eiusmod tempor incididunt ut labore </p>
+                    <p>Anuncia tu moto Aqui! ,<br>
+                        Y empieza a ganar dinero </p>
                 </div>
             </div>
             <div class="item">
@@ -98,8 +26,8 @@
                 <img src="image/benz.jpg" alt="benz">
                 <div class="carousel-caption">
                     <h2>Car</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur ,<br>
-                        sed do eiusmod tempor incididunt ut labore </p>
+                    <p>Compra tu moto! ,<br>
+                        Y empieza a viajar! </p>
                 </div>
             </div>
         </div>
@@ -159,7 +87,8 @@
         </nav>
     </div>
 </div>
-<!-- ____________________Featured Section ______________________________-->
+<!-- End Carousel Section -->
+<!--  Start Featured Section -->
 <div class="allcontain">
     <div class="feturedsection">
         <h1 class="text-center"><span class="bdots">&bullet;</span>F E A T U R E S<span class="carstxt">C A R S</span>&bullet;</h1>
@@ -219,9 +148,9 @@
             </div>
         </div>
     </div>
-    <!-- ________________________LATEST CARS SECTION _______________________-->
+    <!-- LATEST MOTOS SECTION -->
     <div class="latestcars">
-        <h1 class="text-center">&bullet; LATEST   CARS &bullet;</h1>
+        <h1 class="text-center">&bullet; LATEST   MOTOS &bullet;</h1>
         <ul class="nav nav-tabs navbar-left latest-navleft">
             <li role="presentation" class="li-sortby"><span class="sortby">SORT BY: </span></li>
             <li data-filter=".RECENT" role="presentation"><a href="#mostrecent" class="prcBtnR">MOST RECENT </a></li>
@@ -234,7 +163,7 @@
     </div>
     <br>
     <br>
-    <!-- ________________________Latest Cars Image Thumbnail________________-->
+    <!-- Latest MOTOS Image Thumbnail -->
     <div class="grid">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -463,7 +392,7 @@
             </div>
         </div>
     </div>
-    <!-- _______________________________News Letter ____________________-->
+    <!-- News Letter -->
     <div class="newslettercontent">
         <div class="leftside">
             <img src="image/border.png" alt="border">
@@ -478,44 +407,5 @@
             <button>SUBSCRIBE</button>
         </div>
     </div>
-    <!-- ______________________________________________________Bottom Menu ______________________________-->
-    <div class="bottommenu">
-        <div class="bottomlogo">
-            <span class="dotlogo">&bullet;</span><img src="image/collectionlogo1.png" alt="logo1"><span class="dotlogo">&bullet;;</span>
-        </div>
-        <ul class="nav nav-tabs bottomlinks">
-            <li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>
-            <li role="presentation"><a href="#/">CATEGORIES</a></li>
-            <li role="presentation"><a href="#/">PREORDERS</a></li>
-            <li role="presentation"><a href="#/">CONTACT US</a></li>
-            <li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>
-        </ul>
-        <p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>
-            eiusmod tempor incididunt </p>
-        <img src="image/line.png" alt="line"> <br>
-        <div class="bottomsocial">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-pinterest"></i></a>
-        </div>
-        <div class="footer">
-            <div class="copyright">
-                &copy; Copy right 2018 | <a href="#">Privacy </a>| <a href="#">Policy</a>
-            </div>
-            <div class="atisda">
-                Creado por Dylan Bolaños y Jonathan Arce.
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Scripts -->
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/js/isotope.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/js/myscript.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/jquery.1.11.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/bootstrap.js') }}"></script>
-
-</body>
-</html>
+@endsection

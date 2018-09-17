@@ -1,11 +1,11 @@
 /*
- Theme Name: GARAGE
- Author: Web Domus ITALIA
- Author URI: http://www.webdomus.net/
- Description: GARAGE a multi-purpose HTML5 template built with latest Bootstrap framework. It offers flexible solutions, responsive, well documented and comes packed with tons of feature and options which they can be easily customized! It is a perfect solution for all kinds of businesses from small businesses to startups and bloggers.
+ Theme Name: MIMOTOv1
+ Author: MiMoto
+ Author URI: http://mimoto.cr/
+ Description: MiMoto version 1.0
  Version: 1.0.0
- License:  GARAGE template is under Creative Commons Attribution 4.0 International License.
- Template: GARAGE
+ License:  MiMoto License.
+ Template: MiMoto
  */
 
 
@@ -341,11 +341,12 @@ float: right;
 }
 .carousel-caption{
 	z-index: 999;
+	text-align: left;
 }
 .carousel-caption>h2{
 	text-align: left;
 	font-family: 'OpenSans Semibold';
-	font-size: 25.12pt;
+	font-size: 24.12pt;
 	text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
 
 }
@@ -353,13 +354,14 @@ float: right;
 	font-family: "OpenSans Regular";
 	src:url(../source/fonts/OpenSans-Regular.ttf) format("truetype");
 }
-.carousel-caption>h2>p{
-font-family: :'OpenSans Regular';
-font-size: 15.88pt;
+.carousel-caption>p{
+font-family:'OpenSans Regular';
+font-size: 17.88pt;
+text-align: left;
 }
 .carousel-caption {
     top: 35%;
-    left:13%;
+    left:11%;
     right:auto;
     bottom: auto;
 }
