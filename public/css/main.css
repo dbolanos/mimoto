@@ -400,6 +400,7 @@ font-size: 10pt;
 		padding-left: 6.6%;
 		padding-bottom: 26px;
 		width: 100%;
+		background-color: #773311;
  
 }
 .searchtxt{
@@ -447,8 +448,8 @@ font-size: 10pt;
 	border: 1px solid #fff!important;
 }
 .navbarborder>li>a:hover{
-	color: #F8C72D !important;
-	background-color: #fff!important;
+	color: #000000!important;
+	background-color: #FF7E3E!important;
 
 }
 .navbarborder>li:last-child{
