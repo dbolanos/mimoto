@@ -1,15 +1,15 @@
 @extends('layouts.master')
 @section('title','Registro')
 @section('contain')
+
     <div class="allcontain">
+        <div class="contact">
+            <div class="newslettercontent">
+                <div class="leftside">
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header">{{ __('Register') }}</div>
-
-                        <div class="card-body">
+                    <div class="contact-form">
+                        <h1>Registro</h1>
+                        <div class="form-group group-coustume">
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
 
@@ -19,8 +19,8 @@
 
                                     <div class="col-md-6">
                                         <input id="first_name" type="text"
-                                               class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}"
-                                               name="first_name" value="{{ old('first_name') }}" required autofocus>
+                                               class="name-form form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}"
+                                               name="first_name" value="{{ old('first_name') }}" autofocus>
 
                                         @if ($errors->has('first_name'))
                                             <span class="invalid-feedback" role="alert">
@@ -37,7 +37,7 @@
                                     <div class="col-md-6">
                                         <input id="first_surname" type="text"
                                                class="form-control{{ $errors->has('first_surname') ? ' is-invalid' : '' }}"
-                                               name="first_surname" value="{{ old('first_surname') }}" required
+                                               name="first_surname" value="{{ old('first_surname') }}"
                                                autofocus>
 
                                         @if ($errors->has('first_surname'))
@@ -143,12 +143,11 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="otras_sennas"
+                                    <label for="address_line"
                                            class="col-md-4 col-form-label text-md-right">{{ __('Otras señas') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="otras_sennas" type="text" class="form-control" name="otras_sennas"
-                                               required>
+                                        <input id="address_line" type="text" class="form-control" name="address_line">
                                     </div>
                                 </div>
 
@@ -191,9 +190,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <script src="{{ asset('js/customerRegister.js') }}" defer></script>
 
+            </div>
+
+        </div>
     </div>
+
+    <script src="{{ asset('js/customerRegister.js') }}" defer></script>
+
 @endsection

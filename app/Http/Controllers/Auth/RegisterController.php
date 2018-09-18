@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
+use App\Models\Customer;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -49,9 +50,15 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'first_name'        => 'required|string|max:255',
+            'first_surname'     => 'required|string|max:255',
+            'second_surname'    => 'required|string|max:255',
+            'email'             => 'required|string|email|max:255|unique:users',
+            'phone'             => 'required|string|max:11',
+            'province'          => 'required',
+            'canton'            => 'required',
+            'district'          => 'required',
+            'password'          => 'required|string|min:6|confirmed',
         ]);
     }
 
@@ -64,9 +71,26 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'name'      => $data['first_name'] . ' ' . $data['first_surname'],
+            'email'     => $data['email'],
+            'password'  => Hash::make($data['password']),
         ]);
+
+        $customer                   = new Customer();
+        $customer->first_name       = $data['first_name'];
+        $customer->first_surname    = $data['first_surname'];
+        $customer->second_surname   = $data['second_surname'];
+        $customer->email            = $data['email'];
+        $customer->district_id      = $data['district'];
+        $customer->address_line     = $data['address_line'];
+        $customer->user_id          = $user->id;
+
+        $customer->save();
+
+        //TODO Add attach role
+
+        return $user;
+
+
     }
 }
