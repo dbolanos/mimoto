@@ -1,0 +1,12 @@
+.lbl_reg{
+    font-family: 'BebasNeue Regular';
+    font-size: 15px;
+    color: #313943;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    padding-right: 10px!important;
+    margin-left: 34px;
+    border-bottom: 2px solid
+}

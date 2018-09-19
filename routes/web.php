@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('mimoto/main');
-});
+})->name('index');
 
 Auth::routes();
 
@@ -25,8 +25,4 @@ Route::get('cliente-registro',      ['as' => 'cliente.registro'           , 'use
 //Get Cantones and Districts by Province
 Route::get('get-cantons-districts',      ['as' => 'get-cantons-districts' , 'uses'  => 'DistrictController@getCantonsDistricts']);
 
-//Route::get('get-cantons-districts',   function (){
-//    return json_encode('hola');
-//});
 
-//Get Districts by Canton
