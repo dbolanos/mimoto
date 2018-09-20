@@ -18,7 +18,8 @@ class CreateCantonsTable extends Migration
             $table->string('name');
             $table->integer('province_id')->unsigned();
             $table->foreign('province_id')->references('id')->on('provinces');
-            $table->integer('status');
+            $table->integer('status')->default(true);
+
             $table->timestamps();
         });
     }

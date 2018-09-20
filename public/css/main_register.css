@@ -215,6 +215,8 @@ iframe {
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .contact100-form-title-2 {
@@ -223,6 +225,8 @@ iframe {
   color: #fff;
   line-height: 1.5;
   text-align: center;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 

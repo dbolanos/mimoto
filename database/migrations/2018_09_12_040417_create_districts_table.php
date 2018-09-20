@@ -18,7 +18,8 @@ class CreateDistrictsTable extends Migration
             $table->string('name');
             $table->integer('canton_id')->unsigned();
             $table->foreign('canton_id')->references('id')->on('cantons');
-            $table->integer('status');
+            $table->integer('status')->default(true);
+
             $table->timestamps();
         });
     }
