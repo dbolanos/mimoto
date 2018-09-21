@@ -1066,6 +1066,562 @@ class ProvinceCantonDistrictSeeder extends Seeder
                 'name' => 'San Antonio',
                 'canton_id' => 120
             ],
+            [
+                'id' => 20101,
+                'name' => 'Alajuela',
+                'canton_id' => 201,
+            ],
+            [
+                'id' => 20102,
+                'name' => 'San José',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20103,
+                'name' => 'Carrizal',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20104,
+                'name' => 'San Antonio',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20105,
+                'name' => 'La Guácima',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20106,
+                'name' => 'San Isidro',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20107,
+                'name' => 'Sabanilla',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20108,
+                'name' => 'San Rafael',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20109,
+                'name' => 'Río Segundo',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20110,
+                'name' => 'Desamparados',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20111,
+                'name' => 'Turrúcares',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20112,
+                'name' => 'Tambor',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20113,
+                'name' => 'La Garita',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20114,
+                'name' => 'Sarapiquí',
+                'canton_id' => 201
+            ],
+            [
+                'id' => 20201,
+                'name' => 'San Ramón',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20202,
+                'name' => 'Santiago',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20203,
+                'name' => 'San Juan',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20204,
+                'name' => 'Piedades Norte',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20205,
+                'name' => 'Piedades Sur',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20206,
+                'name' => 'San Rafael',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20207,
+                'name' => 'San Isidro',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20208,
+                'name' => 'Los Ángeles',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20209,
+                'name' => 'Alfaro',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20210,
+                'name' => 'Volio',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20211,
+                'name' => 'Concepción',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20212,
+                'name' => 'Zapotal',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20213,
+                'name' => 'Peñas Blancas',
+                'canton_id' => 202
+            ],
+            [
+                'id' => 20301,
+                'name' => 'Grecia',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20302,
+                'name' => 'San Isidro',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20303,
+                'name' => 'San José',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20304,
+                'name' => 'San Roque',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20305,
+                'name' => 'Tacares',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20306,
+                'name' => 'Río Cuarto',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20307,
+                'name' => 'Puente de Piedra',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20308,
+                'name' => 'Bolívar',
+                'canton_id' => 203
+            ],
+            [
+                'id' => 20401,
+                'name' => 'San Mateo',
+                'canton_id' => 204
+            ],
+            [
+                'id' => 20402,
+                'name' => 'Desmonte',
+                'canton_id' => 204
+            ],
+            [
+                'id' => 20403,
+                'name' => 'Jesús María',
+                'canton_id' => 204
+            ],
+            [
+                'id' => 20501,
+                'name' => 'Atenas',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20502,
+                'name' => 'Jesús',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20503,
+                'name' => 'Mercedes',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20504,
+                'name' => 'San Isidro',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20505,
+                'name' => 'Concepción',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20506,
+                'name' => 'San José',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20507,
+                'name' => 'Santa Eulalia',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20508,
+                'name' => 'Escobal',
+                'canton_id' => 205
+            ],
+            [
+                'id' => 20601,
+                'name' => 'Naranjo',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20602,
+                'name' => 'San Miguel',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20603,
+                'name' => 'San José',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20604,
+                'name' => 'Cirrí Sur',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20605,
+                'name' => 'San Jerónimo',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20606,
+                'name' => 'San Juan',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20607,
+                'name' => 'El Rosario',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20608,
+                'name' => 'Palmitos',
+                'canton_id' => 206
+            ],
+            [
+                'id' => 20701,
+                'name' => 'Palmares',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20702,
+                'name' => 'Zaragoza',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20703,
+                'name' => 'Buenos Aires',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20704,
+                'name' => 'Santiago',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20705,
+                'name' => 'Candelaria',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20706,
+                'name' => 'Esquipulas',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20707,
+                'name' => 'La Granja',
+                'canton_id' => 207
+            ],
+            [
+                'id' => 20801,
+                'name' => 'San Pedro',
+                'canton_id' => 208
+            ],
+            [
+                'id' => 20802,
+                'name' => 'San Juan',
+                'canton_id' => 208
+            ],
+            [
+                'id' => 20803,
+                'name' => 'San Rafael',
+                'canton_id' => 208
+            ],
+            [
+                'id' => 20804,
+                'name' => 'Carrillos',
+                'canton_id' => 208
+            ],
+            [
+                'id' => 20805,
+                'name' => 'Sabana Redonda',
+                'canton_id' => 208
+            ],
+            [
+                'id' => 20901,
+                'name' => 'Orotina',
+                'canton_id' => 209
+            ],
+            [
+                'id' => 20902,
+                'name' => 'El Mastate',
+                'canton_id' => 209
+            ],
+            [
+                'id' => 20903,
+                'name' => 'Hacienda Vieja',
+                'canton_id' => 209
+            ],
+            [
+                'id' => 20904,
+                'name' => 'Coyolar',
+                'canton_id' => 209
+            ],
+            [
+                'id' => 20905,
+                'name' => 'La Ceiba',
+                'canton_id' => 209
+            ],
+            [
+                'id' => 21001,
+                'name' => 'Quesada',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21002,
+                'name' => 'Florencia',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21003,
+                'name' => 'Buenavista',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21004,
+                'name' => 'Aguas Zarcas',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21005,
+                'name' => 'Venecia',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21006,
+                'name' => 'Pital',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21007,
+                'name' => 'La Fortuna',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21008,
+                'name' => 'La Tigra',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21009,
+                'name' => 'La Palmera',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21010,
+                'name' => 'Venado',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21011,
+                'name' => 'Cutris',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21012,
+                'name' => 'Monterrey',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21013,
+                'name' => 'Pocosol',
+                'canton_id' => 210
+            ],
+            [
+                'id' => 21101,
+                'name' => 'Zarcero',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21102,
+                'name' => 'Laguna',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21103,
+                'name' => 'Tapesco',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21104,
+                'name' => 'Guadalupe',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21105,
+                'name' => 'Palmira',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21106,
+                'name' => 'Zapote',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21107,
+                'name' => 'Brisas',
+                'canton_id' => 211
+            ],
+            [
+                'id' => 21201,
+                'name' => 'Sarchí Norte',
+                'canton_id' => 212
+            ],
+            [
+                'id' => 21202,
+                'name' => 'Sarchí Sur',
+                'canton_id' => 212
+            ],
+            [
+                'id' => 21203,
+                'name' => 'Toro Amarillo',
+                'canton_id' => 212
+            ],
+            [
+                'id' => 21204,
+                'name' => 'San Pedro',
+                'canton_id' => 212
+            ],
+            [
+                'id' => 21205,
+                'name' => 'Rodríguez',
+                'canton_id' => 212
+            ],
+            [
+                'id' => 21301,
+                'name' => 'Upala',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21302,
+                'name' => 'Aguas Claras',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21303,
+                'name' => 'San José (Pizote)',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21304,
+                'name' => 'Bijagua',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21305,
+                'name' => 'Delicias',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21306,
+                'name' => 'Dos Ríos',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21307,
+                'name' => 'Yoliyllal',
+                'canton_id' => 213
+            ],
+            [
+                'id' => 21401,
+                'name' => 'Los Chiles',
+                'canton_id' => 214
+            ],
+            [
+                'id' => 21402,
+                'name' => 'Caño Negro',
+                'canton_id' => 214
+            ],
+            [
+                'id' => 21403,
+                'name' => 'El Amparo',
+                'canton_id' => 214
+            ],
+            [
+                'id' => 21404,
+                'name' => 'San Jorge',
+                'canton_id' => 214
+            ],
+            [
+                'id' => 21501,
+                'name' => 'San Rafael',
+                'canton_id' => 215
+            ],
+            [
+                'id' => 21502,
+                'name' => 'Buenavista',
+                'canton_id' => 215
+            ],
+            [
+                'id' => 21503,
+                'name' => 'Cote',
+                'canton_id' => 215
+            ],
+            [
+                'id' => 21504,
+                'name' => 'Katira',
+                'canton_id' => 215
+            ],
+
 
         ];
 
