@@ -109,13 +109,13 @@
                     </div>
                 </div>
 
-                <div class="wrap-input100 validate-input">
-                    <label for="province" style="color:black"
-                           class="label-input100">{{ __('Provincia') }}</label>
+                <div class="wrap-combo100 validate-input">
+                    <label for="province" class="label-input100">
+                        {{ __('Provincia') }}
+                    </label>
 
-                    <div class="col-md-6">
-                        <select id="province" style="border: 2px solid #555" class="input100"
-                                name="province">
+                    <div class="col-lg-4 col-lg-offset-3">
+                        <select id="province" class="combo-signup" name="province">
                             @foreach($provinces as $province)
                                 <option value="{{ $province->id }}"> {{ $province->name }} </option>
                             @endforeach
@@ -123,13 +123,13 @@
                     </div>
                 </div>
 
-                <div class="wrap-input100 validate-input">
-                    <label for="canton" style="color:black"
-                           class="label-input100">{{ __('Cantón') }}</label>
+                <div class="wrap-combo100 validate-input">
+                    <label for="canton" class="label-input100">
+                        {{ __('Cantón') }}
+                    </label>
 
-                    <div class="col-md-6">
-                        <select id="canton" style="border: 2px solid #555" class="input100"
-                                name="canton">
+                    <div class="col-lg-4 col-lg-offset-3">
+                        <select id="canton"  class="combo-signup" name="canton">
                             @foreach($cantons as $canton)
                                 <option value="{{ $canton->id }}"> {{ $canton->name }} </option>
                             @endforeach
@@ -137,15 +137,17 @@
                     </div>
                 </div>
 
-                <div class="wrap-input100 validate-input">
-                    <label for="district" style="color:black"
-                           class="label-input100">{{ __('Distrito') }}</label>
+                <div class="wrap-combo100 validate-input">
+                    <label for="district" class="label-input100">
+                        {{ __('Distrito') }}
+                    </label>
 
-                    <div class="col-md-6">
-                        <select id="district" style="border: 2px solid #555" class="input100"
-                                name="district">
+                    <div class="col-lg-4 col-lg-offset-3">
+                        <select id="district" class="combo-signup" name="district">
                             @foreach($districts as $district)
-                                <option value="{{ $district->id }}"> {{ $district->name }} </option>
+                                <option value="{{ $district->id }}">
+                                    {{ $district->name }}
+                                </option>
                             @endforeach
                         </select>
                     </div>
@@ -189,7 +191,7 @@
 
 
                 <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
+                    <button class="contact100-form-btn center-block">
 						<span>
 							Crear Cuenta
 							<i class="fas fa-plus"></i>

@@ -272,6 +272,12 @@ iframe {
   margin-bottom: 26px;
 }
 
+.wrap-combo100 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 26px;
+}
+
 
 .label-input100 {
   font-family: 'BebasNeue Regular';
@@ -289,6 +295,15 @@ iframe {
 
 .invalid-feedback{
     color: darkred;
+}
+
+/*------------------------------------------------------------------
+[ combo ]*/
+.combo-signup{
+  border-radius: 15px;
+  border-color: black;
+  height: 35px;
+  width: 235px;
 }
 
 /*---------------------------------------------*/
