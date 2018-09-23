@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //CONFIGURATION FOR THE DATABASE
         Schema::defaultStringLength(191);
         date_default_timezone_set('America/Costa_Rica');
     }

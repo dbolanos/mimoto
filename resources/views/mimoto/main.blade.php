@@ -52,27 +52,42 @@
                 </form>
                 <ul class="nav navbar-nav navbarborder">
                     <li class="li-category">
-                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Categoría<span class="glyphicon glyphicon-chevron-down downicon"></span></a>
+                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Categoría
+                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
+                        </a>
                         <ul class="dropdown-menu" id="mydd">
                             <li><a href="#">Epic</a></li>
                             <li><a href="#">Old</a></li>
                             <li><a href="#">New</a></li>
                         </ul>
                     </li>
-                    <li class="li-minyear"><a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Minimo <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
-                        <ul class="dropdown-menu" id="mydd2">
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                        </ul>
-                    </li>
-                    <li class="li-maxyear"><a class="btn dropdown-toggle btn-costume"  id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Maximo <span class="glyphicon glyphicon-chevron-down downicon"></span></a>
-                        <ul class="dropdown-menu" id="mydd3">
+
+
+                    <li class="li-category">
+                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Año Minimo
+                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="mydd">
                             <li><a href="#">1900</a></li>
                             <li><a href="#">2000</a></li>
                             <li><a href="#">2016</a></li>
                         </ul>
                     </li>
+
+                    <li class="li-category">
+                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Año Maximo
+                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="mydd">
+                            <li><a href="#">1900</a></li>
+                            <li><a href="#">2000</a></li>
+                            <li><a href="#">2016</a></li>
+                        </ul>
+                    </li>
+
                     <li class="li-slideprice">
                         <p> <label class="slidertxt" for="amount">Precio </label>
                             <input class="priceslider" type="text" id="amount" readonly="readonly">
