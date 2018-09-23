@@ -87,7 +87,8 @@ class RegisterController extends Controller
 
         $customer->save();
 
-        //TODO Add attach role
+        //Attach Customer role
+        $user->roles()->attach(4);
 
         return $user;
 
