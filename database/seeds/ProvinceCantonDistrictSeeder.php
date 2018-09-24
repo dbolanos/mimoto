@@ -1073,7 +1073,7 @@ class ProvinceCantonDistrictSeeder extends Seeder
             ],
             [
                 'id' => 20102,
-                'name' => 'San José',
+                'name' => 'Barrio San José',
                 'canton_id' => 201
             ],
             [
@@ -1620,6 +1620,261 @@ class ProvinceCantonDistrictSeeder extends Seeder
                 'id' => 21504,
                 'name' => 'Katira',
                 'canton_id' => 215
+            ],
+            [
+                'id' => 30101,
+                'name' => 'Oriental',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30102,
+                'name' => 'Occidental',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30103,
+                'name' => 'Carmen',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30104,
+                'name' => 'San Nicolás',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30105,
+                'name' => 'Aguacaliente (San Francisco)',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30106,
+                'name' => 'Guadalupe (Arenilla)',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30107,
+                'name' => 'Corralillo',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30108,
+                'name' => 'Tierra Blanca',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30109,
+                'name' => 'Dulce Nombre',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30110,
+                'name' => 'Llano Grande',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30111,
+                'name' => 'Quebradilla',
+                'canton_id' => 301
+            ],
+            [
+                'id' => 30201,
+                'name' => 'Paraíso',
+                'canton_id' => 302
+            ],
+            [
+                'id' => 30202,
+                'name' => 'Santiago',
+                'canton_id' => 302
+            ],
+            [
+                'id' => 30203,
+                'name' => 'Orosi',
+                'canton_id' => 302
+            ],
+            [
+                'id' => 30204,
+                'name' => 'Cachí',
+                'canton_id' => 302
+            ],
+            [
+                'id' => 30205,
+                'name' => 'Llanos de Santa Lucía',
+                'canton_id' => 302
+            ],
+            [
+                'id' => 30301,
+                'name' => 'Tres Ríos',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30302,
+                'name' => 'San Diego',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30303,
+                'name' => 'San Juan',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30304,
+                'name' => 'San Rafael',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30305,
+                'name' => 'Concepción',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30306,
+                'name' => 'Dulce Nombre',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30307,
+                'name' => 'San Ramón',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30308,
+                'name' => 'Río Azul',
+                'canton_id' => 303
+            ],
+            [
+                'id' => 30401,
+                'name' => 'Juan Viñas',
+                'canton_id' => 304
+            ],
+            [
+                'id' => 30402,
+                'name' => 'Tucurrique',
+                'canton_id' => 304
+            ],
+            [
+                'id' => 30403,
+                'name' => 'Pejibaye',
+                'canton_id' => 304
+            ],
+            [
+                'id' => 30501,
+                'name' => 'Turrialba',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30502,
+                'name' => 'La Suiza',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30503,
+                'name' => 'Peralta',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30504,
+                'name' => 'Santa Cruz',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30505,
+                'name' => 'Santa Teresita',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30506,
+                'name' => 'Pavones',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30507,
+                'name' => 'Tuis',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30508,
+                'name' => 'Tayutic',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30509,
+                'name' => 'Santa Rosa',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30510,
+                'name' => 'Tres Equis',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30511,
+                'name' => 'La Isabel',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30512,
+                'name' => 'Chirripó',
+                'canton_id' => 305
+            ],
+            [
+                'id' => 30601,
+                'name' => 'Pacayas',
+                'canton_id' => 306
+            ],
+            [
+                'id' => 30602,
+                'name' => 'Cervantes',
+                'canton_id' => 306
+            ],
+            [
+                'id' => 30603,
+                'name' => 'Capellades',
+                'canton_id' => 306
+            ],
+            [
+                'id' => 30701,
+                'name' => 'San Rafael',
+                'canton_id' => 307
+            ],
+            [
+                'id' => 30702,
+                'name' => 'Cot',
+                'canton_id' => 307
+            ],
+            [
+                'id' => 30703,
+                'name' => 'Potrero Cerrado',
+                'canton_id' => 307
+            ],
+            [
+                'id' => 30704,
+                'name' => 'Cipreses',
+                'canton_id' => 307
+            ],
+            [
+                'id' => 30705,
+                'name' => 'Santa Rosa',
+                'canton_id' => 307
+            ],
+            [
+                'id' => 30801,
+                'name' => 'El Tejar',
+                'canton_id' => 308
+            ],
+            [
+                'id' => 30802,
+                'name' => 'San Isidro',
+                'canton_id' => 308
+            ],
+            [
+                'id' => 30803,
+                'name' => 'Tobosi',
+                'canton_id' => 308
+            ],
+            [
+                'id' => 30804,
+                'name' => 'Patio de Agua',
+                'canton_id' => 308
             ],
 
 
