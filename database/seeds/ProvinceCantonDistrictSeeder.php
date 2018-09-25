@@ -14,6 +14,7 @@ class ProvinceCantonDistrictSeeder extends Seeder
      */
     public function run()
     {
+
         //
         $provinces = [
             [
@@ -1875,6 +1876,915 @@ class ProvinceCantonDistrictSeeder extends Seeder
                 'id' => 30804,
                 'name' => 'Patio de Agua',
                 'canton_id' => 308
+            ],
+
+            ['id' => 40101,
+                'name' => 'Heredia',
+                'canton_id' => 401
+            ],
+            ['id' => 40102,
+                'name' => 'Mercedes',
+                'canton_id' => 401
+            ],
+            ['id' => 40103,
+                'name' => 'San Francisco',
+                'canton_id' => 401
+            ],
+            ['id' => 40104,
+                'name' => 'Ulloa',
+                'canton_id' => 401
+            ],
+            ['id' => 40105,
+                'name' => 'Varablanca',
+                'canton_id' => 401
+            ],
+            ['id' => 40201,
+                'name' => 'Barva',
+                'canton_id' => 402
+            ],
+            ['id' => 40202,
+                'name' => 'San Pedro',
+                'canton_id' => 402
+            ],
+            ['id' => 40203,
+                'name' => 'San Pablo',
+                'canton_id' => 402
+            ],
+            ['id' => 40204,
+                'name' => 'San Roque',
+                'canton_id' => 402
+            ],
+            ['id' => 40205,
+                'name' => 'Santa Lucía',
+                'canton_id' => 402
+            ],
+            ['id' => 40206,
+                'name' => 'San José de la Montaña',
+                'canton_id' => 402
+            ],
+            ['id' => 40301,
+                'name' => 'Santo Domingo',
+                'canton_id' => 403
+            ],
+            ['id' => 40302,
+                'name' => 'San Vicente',
+                'canton_id' => 403
+            ],
+            ['id' => 40303,
+                'name' => 'San Miguel',
+                'canton_id' => 403
+            ],
+            ['id' => 40304,
+                'name' => 'Paracito',
+                'canton_id' => 403
+            ],
+            ['id' => 40305,
+                'name' => 'Santo Tomás',
+                'canton_id' => 403
+            ],
+            ['id' => 40306,
+                'name' => 'Santa Rosa',
+                'canton_id' => 403
+            ],
+            ['id' => 40307,
+                'name' => 'Tures',
+                'canton_id' => 403
+            ],
+            ['id' => 40308,
+                'name' => 'Para',
+                'canton_id' => 403
+            ],
+            ['id' => 40401,
+                'name' => 'Santa Bárbara',
+                'canton_id' => 404
+            ],
+            ['id' => 40402,
+                'name' => 'San Pedro',
+                'canton_id' => 404
+            ],
+            ['id' => 40403,
+                'name' => 'San Juan',
+                'canton_id' => 404
+            ],
+            ['id' => 40404,
+                'name' => 'Jesús',
+                'canton_id' => 404
+            ],
+            ['id' => 40405,
+                'name' => 'Santo Domingo',
+                'canton_id' => 404
+            ],
+            ['id' => 40406,
+                'name' => 'Puraba',
+                'canton_id' => 404
+            ],
+            ['id' => 40501,
+                'name' => 'San Rafael',
+                'canton_id' => 405
+            ],
+            ['id' => 40502,
+                'name' => 'San Josécito',
+                'canton_id' => 405
+            ],
+            ['id' => 40503,
+                'name' => 'Santiago',
+                'canton_id' => 405
+            ],
+            ['id' => 40504,
+                'name' => 'Los Ángeles',
+                'canton_id' => 405
+            ],
+            ['id' => 40505,
+                'name' => 'Concepción',
+                'canton_id' => 405
+            ],
+            ['id' => 40601,
+                'name' => 'San Isidro',
+                'canton_id' => 406
+            ],
+            ['id' => 40602,
+                'name' => 'San José',
+                'canton_id' => 406
+            ],
+            ['id' => 40603,
+                'name' => 'Concepción',
+                'canton_id' => 406
+            ],
+            ['id' => 40604,
+                'name' => 'San Francisco',
+                'canton_id' => 406
+            ],
+            ['id' => 40701,
+                'name' => 'San Antonio',
+                'canton_id' => 407
+            ],
+            ['id' => 40702,
+                'name' => 'La Ribera',
+                'canton_id' => 407
+            ],
+            ['id' => 40703,
+                'name' => 'La Asunción',
+                'canton_id' => 407
+            ],
+            ['id' => 40801,
+                'name' => 'San Joaquín de Flores',
+                'canton_id' => 408
+            ],
+            ['id' => 40802,
+                'name' => 'Barrantes',
+                'canton_id' => 408
+            ],
+            ['id' => 40803,
+                'name' => 'Llorente',
+                'canton_id' => 408
+            ],
+            ['id' => 40901,
+                'name' => 'San Pablo',
+                'canton_id' => 409
+            ],
+            ['id' => 40902,
+                'name' => 'Rincón de Sabanilla',
+                'canton_id' => 409
+            ],
+            ['id' => 41001,
+                'name' => 'Puerto Viejo',
+                'canton_id' => 410
+            ],
+            ['id' => 41002,
+                'name' => 'La Virgen',
+                'canton_id' => 410
+            ],
+            ['id' => 41003,
+                'name' => 'Horquetas',
+                'canton_id' => 410
+            ],
+            ['id' => 41004,
+                'name' => 'Llanuras del Gaspar',
+                'canton_id' => 410
+            ],
+            ['id' => 41005,
+                'name' => 'Cureña',
+                'canton_id' => 410
+            ],
+            [
+                'id' => 50101,
+                'name' => 'Liberia',
+                'canton_id' => '501'
+            ],
+            [
+                'id' => 50102,
+                'name' => 'Cañas Dulces',
+                'canton_id' => '501'
+            ],
+            [
+                'id' => 50103,
+                'name' => 'Mayorga',
+                'canton_id' => '501'
+            ],
+            [
+                'id' => 50104,
+                'name' => 'Nacascolo',
+                'canton_id' => '501'
+            ],
+            [
+                'id' => 50105,
+                'name' => 'Curubande',
+                'canton_id' => '501'
+            ],
+            [
+                'id' => 50201,
+                'name' => 'Nicoya',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50202,
+                'name' => 'Mansion',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50203,
+                'name' => 'San Antonio',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50204,
+                'name' => 'Quebrada Honda',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50205,
+                'name' => 'Samara',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50206,
+                'name' => 'Nosara',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50207,
+                'name' => 'Belén de Nosarita',
+                'canton_id' => '502'
+            ],
+            [
+                'id' => 50301,
+                'name' => 'Santa Cruz',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50302,
+                'name' => 'Bolson',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50303,
+                'name' => 'Veintisiete de Abril',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50304,
+                'name' => 'Tempate',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50305,
+                'name' => 'Cartagena',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50306,
+                'name' => 'Cuajiniquil',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50307,
+                'name' => 'Diria',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50308,
+                'name' => 'Cabo Velas',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50309,
+                'name' => 'Tamarindo',
+                'canton_id' => '503'
+            ],
+            [
+                'id' => 50401,
+                'name' => 'Bagaces',
+                'canton_id' => '504'
+            ],
+            [
+                'id' => 50402,
+                'name' => 'Fortuna',
+                'canton_id' => '504'
+            ],
+            [
+                'id' => 50403,
+                'name' => 'Mogote',
+                'canton_id' => '504'
+            ],
+            [
+                'id' => 50404,
+                'name' => 'Río Naranjo',
+                'canton_id' => '504'
+            ],
+            [
+                'id' => 50501,
+                'name' => 'Filadelfia',
+                'canton_id' => '505'
+            ],
+            [
+                'id' => 50502,
+                'name' => 'Palmira',
+                'canton_id' => '505'
+            ],
+            [
+                'id' => 50503,
+                'name' => 'Sardinal',
+                'canton_id' => '505'
+            ],
+            [
+                'id' => 50504,
+                'name' => 'Belén',
+                'canton_id' => '505'
+            ],
+            [
+                'id' => 50601,
+                'name' => 'Cañas',
+                'canton_id' => '506'
+            ],
+            [
+                'id' => 50602,
+                'name' => 'Palmira',
+                'canton_id' => '506'
+            ],
+            [
+                'id' => 50603,
+                'name' => 'San Miguel',
+                'canton_id' => '506'
+            ],
+            [
+                'id' => 50604,
+                'name' => 'Bebedero',
+                'canton_id' => '506'
+            ],
+            [
+                'id' => 50605,
+                'name' => 'Porozal',
+                'canton_id' => '506'
+            ],
+            [
+                'id' => 50701,
+                'name' => 'Juntas',
+                'canton_id' => '507'
+            ],
+            [
+                'id' => 50702,
+                'name' => 'Sierra',
+                'canton_id' => '507'
+            ],
+            [
+                'id' => 50703,
+                'name' => 'San Juan',
+                'canton_id' => '507'
+            ],
+            [
+                'id' => 50704,
+                'name' => 'Colorado',
+                'canton_id' => '507'
+            ],
+            [
+                'id' => 50801,
+                'name' => 'Tilarán',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50802,
+                'name' => 'Quebrada Grande',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50803,
+                'name' => 'Tronadora',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50804,
+                'name' => 'Santa Rosa',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50805,
+                'name' => 'Líbano',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50806,
+                'name' => 'Tierras Morenas',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50807,
+                'name' => 'Arenal',
+                'canton_id' => '508'
+            ],
+            [
+                'id' => 50901,
+                'name' => 'Carmona',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 50902,
+                'name' => 'Santa Rita',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 50903,
+                'name' => 'Zapotal',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 50904,
+                'name' => 'San Pablo',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 50905,
+                'name' => 'Porvenir',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 50906,
+                'name' => 'Bejuco',
+                'canton_id' => '509'
+            ],
+            [
+                'id' => 51001,
+                'name' => 'La Cruz',
+                'canton_id' => '510'
+            ],
+            [
+                'id' => 51002,
+                'name' => 'Santa Cecilia',
+                'canton_id' => '510'
+            ],
+            [
+                'id' => 51003,
+                'name' => 'Garita',
+                'canton_id' => '510'
+            ],
+            [
+                'id' => 51004,
+                'name' => 'Santa Elena',
+                'canton_id' => '510'
+            ],
+            [
+                'id' => 51101,
+                'name' => 'Hojancha',
+                'canton_id' => '511'
+            ],
+            [
+                'id' => 51102,
+                'name' => 'Monte Romo',
+                'canton_id' => '511'
+            ],
+            [
+                'id' => 51103,
+                'name' => 'Puerto Carrillo',
+                'canton_id' => '511'
+            ],
+            [
+                'id' => 51104,
+                'name' => 'Huacas',
+                'canton_id' => '511'
+            ],
+            [
+                'id' => 60101,
+                'name' => 'Puntarenas',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60102,
+                'name' => 'Pitahaya',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60103,
+                'name' => 'Chomes',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60104,
+                'name' => 'Lepanto',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60105,
+                'name' => 'Paquera',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60106,
+                'name' => 'Manzanillo',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60107,
+                'name' => 'Guacimal',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60108,
+                'name' => 'Barranca',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60109,
+                'name' => 'Monte Verde',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60110,
+                'name' => 'Isla del Coco',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60111,
+                'name' => 'Cobano',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60112,
+                'name' => 'Chacarita',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60113,
+                'name' => 'Chira',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60114,
+                'name' => 'Acapulco',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60115,
+                'name' => 'El Roble',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60116,
+                'name' => 'Arancibia',
+                'canton_id' => '601'
+            ],
+            [
+                'id' => 60201,
+                'name' => 'Espiritu Santo',
+                'canton_id' => '602'
+            ],
+            [
+                'id' => 60202,
+                'name' => 'San Juan Grande',
+                'canton_id' => '602'
+            ],
+            [
+                'id' => 60203,
+                'name' => 'Macacona',
+                'canton_id' => '602'
+            ],
+            [
+                'id' => 60204,
+                'name' => 'San Rafael',
+                'canton_id' => '602'
+            ],
+            [
+                'id' => 60205,
+                'name' => 'San Jerónimo',
+                'canton_id' => '602'
+            ],
+            [
+                'id' => 60301,
+                'name' => 'Buenos Aires',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60302,
+                'name' => 'Volcan',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60303,
+                'name' => 'Potrero Grande',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60304,
+                'name' => 'Boruca',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60305,
+                'name' => 'Pilas',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60306,
+                'name' => 'Colinas',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60307,
+                'name' => 'Changena',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60308,
+                'name' => 'Briolley',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60309,
+                'name' => 'Brunka',
+                'canton_id' => '603'
+            ],
+            [
+                'id' => 60401,
+                'name' => 'Miramar',
+                'canton_id' => '604'
+            ],
+            [
+                'id' => 60402,
+                'name' => 'La Unión',
+                'canton_id' => '604'
+            ],
+            [
+                'id' => 60403,
+                'name' => 'San Isidro',
+                'canton_id' => '604'
+            ],
+            [
+                'id' => 60501,
+                'name' => 'Puerto Cortes',
+                'canton_id' => '605'
+            ],
+            [
+                'id' => 60502,
+                'name' => 'Palmar',
+                'canton_id' => '605'
+            ],
+            [
+                'id' => 60503,
+                'name' => 'Sierpe',
+                'canton_id' => '605'
+            ],
+            [
+                'id' => 60504,
+                'name' => 'Bahia Ballena',
+                'canton_id' => '605'
+            ],
+            [
+                'id' => 60505,
+                'name' => 'Piedras Blancas',
+                'canton_id' => '605'
+            ],
+            [
+                'id' => 60601,
+                'name' => 'Quepos',
+                'canton_id' => '606'
+            ],
+            [
+                'id' => 60602,
+                'name' => 'Savegre',
+                'canton_id' => '606'
+            ],
+            [
+                'id' => 60603,
+                'name' => 'Naranjito',
+                'canton_id' => '606'
+            ],
+            [
+                'id' => 60701,
+                'name' => 'Golfito',
+                'canton_id' => '607'
+            ],
+            [
+                'id' => 60702,
+                'name' => 'Puerto Jiménez',
+                'canton_id' => '607'
+            ],
+            [
+                'id' => 60703,
+                'name' => 'Guaycara',
+                'canton_id' => '607'
+            ],
+            [
+                'id' => 60704,
+                'name' => 'Pavon',
+                'canton_id' => '607'
+            ],
+            [
+                'id' => 60801,
+                'name' => 'San Vito',
+                'canton_id' => '608'
+            ],
+            [
+                'id' => 60802,
+                'name' => 'Sabalito',
+                'canton_id' => '608'
+            ],
+            [
+                'id' => 60803,
+                'name' => 'Aguabuena',
+                'canton_id' => '608'
+            ],
+            [
+                'id' => 60804,
+                'name' => 'Limóncito',
+                'canton_id' => '608'
+            ],
+            [
+                'id' => 60805,
+                'name' => 'Pittier',
+                'canton_id' => '608'
+            ],
+            [
+                'id' => 60901,
+                'name' => 'Parrita',
+                'canton_id' => '609'
+            ],
+            [
+                'id' => 61001,
+                'name' => 'Corredor',
+                'canton_id' => '610'
+            ],
+            [
+                'id' => 61002,
+                'name' => 'La Cuesta',
+                'canton_id' => '610'
+            ],
+            [
+                'id' => 61003,
+                'name' => 'Canoas',
+                'canton_id' => '610'
+            ],
+            [
+                'id' => 61004,
+                'name' => 'Laurel',
+                'canton_id' => '610'
+            ],
+            [
+                'id' => 61101,
+                'name' => 'Jacó',
+                'canton_id' => '611'
+            ],
+            [
+                'id' => 61102,
+                'name' => 'Tarcoles',
+                'canton_id' => '611'
+            ],
+            [
+                'id' => 70101,
+                'name' => 'Limón',
+                'canton_id' => '701'
+            ],
+            [
+                'id' => 70102,
+                'name' => 'Valle La Estrella',
+                'canton_id' => '701'
+            ],
+            [
+                'id' => 70103,
+                'name' => 'Río Blanco',
+                'canton_id' => '701'
+            ],
+            [
+                'id' => 70104,
+                'name' => 'Matama',
+                'canton_id' => '701'
+            ],
+            [
+                'id' => 70201,
+                'name' => 'Guapiles',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70202,
+                'name' => 'Jiménez',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70203,
+                'name' => 'Rita',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70204,
+                'name' => 'Roxana',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70205,
+                'name' => 'Cariari',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70206,
+                'name' => 'Colorado',
+                'canton_id' => '702'
+            ],
+            [
+                'id' => 70301,
+                'name' => 'Siquirres',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70302,
+                'name' => 'Pacuarito',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70303,
+                'name' => 'Florida',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70304,
+                'name' => 'Germania',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70305,
+                'name' => 'Cairo',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70306,
+                'name' => 'Alegria',
+                'canton_id' => '703'
+            ],
+            [
+                'id' => 70401,
+                'name' => 'Bratsi',
+                'canton_id' => '704'
+            ],
+            [
+                'id' => 70402,
+                'name' => 'Sixaola',
+                'canton_id' => '704'
+            ],
+            [
+                'id' => 70403,
+                'name' => 'Cahuita',
+                'canton_id' => '704'
+            ],
+            [
+                'id' => 70404,
+                'name' => 'Telire',
+                'canton_id' => '704'
+            ],
+            [
+                'id' => 70501,
+                'name' => 'Matina',
+                'canton_id' => '705'
+            ],
+            [
+                'id' => 70502,
+                'name' => 'Battan',
+                'canton_id' => '705'
+            ],
+            [
+                'id' => 70503,
+                'name' => 'Carrandi',
+                'canton_id' => '705'
+            ],
+            [
+                'id' => 70601,
+                'name' => 'Guácimo',
+                'canton_id' => '706'
+            ],
+            [
+                'id' => 70602,
+                'name' => 'Mercedes',
+                'canton_id' => '706'
+            ],
+            [
+                'id' => 70603,
+                'name' => 'Pocora',
+                'canton_id' => '706'
+            ],
+            [
+                'id' => 70604,
+                'name' => 'Río Jiménez',
+                'canton_id' => '706'
+            ],
+            [
+                'id' => 70605,
+                'name' => 'Duacari',
+                'canton_id' => '706'
             ],
 
 
