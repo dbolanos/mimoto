@@ -65,15 +65,24 @@
 
 
                     <li class="li-category">
-                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Año Minimo
-                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
-                        </a>
-                        <ul class="dropdown-menu" id="mydd">
-                            <li><a href="#">1900</a></li>
-                            <li><a href="#">2000</a></li>
-                            <li><a href="#">2016</a></li>
-                        </ul>
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+
+                            {{--Año Minimo--}}
+                            {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                            {{--@for ($i = 1950; $i < now()->year ; $i++)--}}
+                                {{--<li><a href="#">{{$i}}</a></li>--}}
+                            {{--@endfor--}}
+                        {{--</ul>--}}
+                            <label for="mydd" class="btn  dropdown-toggle btn-costume" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Minimo
+                                <span class="glyphicon glyphicon-chevron-down downicon"></span>
+                            </label>
+                            <select class="form-control dropdown-menu" id="mydd">
+                                @for ($i = 1950; $i < now()->year ; $i++)
+                                    <option>{{$i}}</option>
+                                @endfor
+                            </select>
                     </li>
 
                     <li class="li-category">
@@ -82,9 +91,9 @@
                             <span class="glyphicon glyphicon-chevron-down downicon"></span>
                         </a>
                         <ul class="dropdown-menu" id="mydd">
-                            <li><a href="#">1900</a></li>
-                            <li><a href="#">2000</a></li>
-                            <li><a href="#">2016</a></li>
+                            @for ($i = 1951; $i < now()->year + 2 ; $i++)
+                                <li><a href="#">{{$i}}</a></li>
+                            @endfor
                         </ul>
                     </li>
 
