@@ -11,18 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('mimoto/main');
-})->name('index');
+//Route::get('/', function () {
+//    return view('mimoto/main');
+//})->name('index');
+
+Route::get('/',                     ['as' => 'index'                    , 'uses'  => 'HomeController@index']);
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 // Crear Usuario y Cliente
-Route::get('cliente-registro',      ['as' => 'cliente.registro'           , 'uses'  => 'CustomerController@customerRegister']);
+Route::get('cliente-registro',      ['as' => 'cliente.registro'         , 'uses'  => 'CustomerController@customerRegister']);
 
 //Get Cantones and Districts by Province
-Route::get('get-cantons-districts',      ['as' => 'get-cantons-districts' , 'uses'  => 'DistrictController@getCantonsDistricts']);
+Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'  => 'DistrictController@getCantonsDistricts']);
 
 

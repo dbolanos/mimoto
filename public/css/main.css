@@ -382,6 +382,22 @@ font-size: 10pt;
 
 
 /* -----------------------------Second Navbar ---------------------------------------*/
+
+/*Combos Quick Search*/
+.combo-search{
+	font-family:'OpenSans Regular';
+	border-radius: 15px;
+	border-color: #fff;
+	height: 35px;
+	width: 205px;
+	text-indent: 5px;
+	color: #fff;
+	background-color: #8ac058;
+	padding-left: 10px;
+}
+
+
+
 .downicon{
 	padding-left: 40px;
 }

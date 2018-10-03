@@ -43,24 +43,43 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarmidle">
                 <div class="searchtxt">
-                    <h1>Buscar Texto</h1>
+                    <h1>Busqueda Rápida:</h1>
                 </div>
-                <form class="navbar-form navbar-left searchformmargin" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control searchform" placeholder="Enter Keyword">
-                    </div>
-                </form>
+
+                    {{--<div class="form-group">--}}
+                        {{--<input type="text" class="form-control searchform" placeholder="Enter Keyword">--}}
+                    {{--</div>--}}
+
+
                 <ul class="nav navbar-nav navbarborder">
+
                     <li class="li-category">
-                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Categoría
-                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
-                        </a>
-                        <ul class="dropdown-menu" id="mydd">
-                            <li><a href="#">Epic</a></li>
-                            <li><a href="#">Old</a></li>
-                            <li><a href="#">New</a></li>
-                        </ul>
+
+                        <select class="combo-search" id="MotoBrand">
+                            <option value="0"> Seleccionar Marca </option>
+                            @foreach ($motorcycle_brands as $motorcycle_brand)
+                                <option value="{{$motorcycle_brand->id}}"> {{$motorcycle_brand->description}} </option>
+                            @endforeach
+                        </select>
+
+                    </li>
+
+                    <li class="li-category">
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+                            {{--Categoría--}}
+                            {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                            {{--@foreach ($type_motorcycles as $type_motorcycles)--}}
+                                {{--<option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>--}}
+                            {{--@endforeach--}}
+                        {{--</ul>--}}
+                        <select class="combo-search" id="MotoBrand">
+                            <option value="0"> Categoría </option>
+                            @foreach ($type_motorcycles as $type_motorcycles)
+                                <option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>
+                            @endforeach
+                        </select>
                     </li>
 
 
@@ -75,26 +94,42 @@
                                 {{--<li><a href="#">{{$i}}</a></li>--}}
                             {{--@endfor--}}
                         {{--</ul>--}}
-                            <label for="mydd" class="btn  dropdown-toggle btn-costume" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Minimo
-                                <span class="glyphicon glyphicon-chevron-down downicon"></span>
-                            </label>
-                            <select class="form-control dropdown-menu" id="mydd">
-                                @for ($i = 1950; $i < now()->year ; $i++)
-                                    <option>{{$i}}</option>
-                                @endfor
-                            </select>
+
+                            {{--<label for="mydd" class="btn  dropdown-toggle btn-costume" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Minimo--}}
+                                {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                            {{--</label>--}}
+                            {{--<select class="form-control dropdown-menu" id="mydd">--}}
+                                {{--@for ($i = 1950; $i < now()->year ; $i++)--}}
+                                    {{--<option>{{$i}}</option>--}}
+                                {{--@endfor--}}
+                            {{--</select>--}}
+
+                        <select class="combo-search" id="MotoBrand">
+                            <option value="0"> Año Minimo </option>
+                            @for ($i = 1950; $i < now()->year ; $i++)
+                                <option value="{{$i}}">{{$i}}</option>
+                            @endfor
+                        </select>
                     </li>
 
                     <li class="li-category">
-                        <a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Año Maximo
-                            <span class="glyphicon glyphicon-chevron-down downicon"></span>
-                        </a>
-                        <ul class="dropdown-menu" id="mydd">
-                            @for ($i = 1951; $i < now()->year + 2 ; $i++)
-                                <li><a href="#">{{$i}}</a></li>
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+                            {{--Año Maximo--}}
+                            {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                            {{--@for ($i = 1951; $i < now()->year + 2 ; $i++)--}}
+                                {{--<li><a href="#">{{$i}}</a></li>--}}
+                            {{--@endfor--}}
+                        {{--</ul>--}}
+
+                        <select class="combo-search" id="MotoBrand">
+                            <option value="0"> Año Maximo </option>
+                            @for ($i = 1951; $i < now()->year ; $i++)
+                                <option value="{{$i}}">{{$i}}</option>
                             @endfor
-                        </ul>
+                        </select>
+
                     </li>
 
                     <li class="li-slideprice">
