@@ -56,7 +56,7 @@
                     <li class="li-category">
 
                         <select class="combo-search" id="MotoBrand">
-                            <option value="0"> Seleccionar Marca </option>
+                            <option value="0"> MARCA </option>
                             @foreach ($motorcycle_brands as $motorcycle_brand)
                                 <option value="{{$motorcycle_brand->id}}"> {{$motorcycle_brand->description}} </option>
                             @endforeach
@@ -75,7 +75,7 @@
                             {{--@endforeach--}}
                         {{--</ul>--}}
                         <select class="combo-search" id="MotoBrand">
-                            <option value="0"> Categoría </option>
+                            <option value="0"> CATEGORÍA </option>
                             @foreach ($type_motorcycles as $type_motorcycles)
                                 <option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>
                             @endforeach
@@ -105,7 +105,7 @@
                             {{--</select>--}}
 
                         <select class="combo-search" id="MotoBrand">
-                            <option value="0"> Año Minimo </option>
+                            <option value="0"> AÑO MÍNIMO </option>
                             @for ($i = 1950; $i < now()->year ; $i++)
                                 <option value="{{$i}}">{{$i}}</option>
                             @endfor
@@ -124,7 +124,7 @@
                         {{--</ul>--}}
 
                         <select class="combo-search" id="MotoBrand">
-                            <option value="0"> Año Maximo </option>
+                            <option value="0"> AÑO MÁXIMO </option>
                             @for ($i = 1951; $i < now()->year ; $i++)
                                 <option value="{{$i}}">{{$i}}</option>
                             @endfor
@@ -139,7 +139,9 @@
                         <div id="slider-range"></div>
 
                     </li>
-                    <li class="li-search"> <button class="searchbutton"><span class="glyphicon glyphicon-search "></span></button></li>
+                    <li class="li-search">
+                        <button class="searchbutton"><i class="fas fa-search"></i> Buscar </button>
+                    </li>
                 </ul>
 
             </div>
