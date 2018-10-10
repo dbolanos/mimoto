@@ -1,7 +1,7 @@
 <!-- Start Footer -->
 <div class="bottommenu">
     <div class="bottomlogo">
-        <span class="dotlogo">&bullet;</span><img src="image/collectionlogo1.png" alt="logo1"><span class="dotlogo">&bullet;;</span>
+        <span class="dotlogo">&bullet;</span><img src="image/collectionlogo1.png" alt="logo1"><span class="dotlogo">&bullet;</span>
     </div>
     <ul class="nav nav-tabs bottomlinks">
         <li role="presentation" ><a href="#/" role="button">ACERCA DE NOSOTROS</a></li>

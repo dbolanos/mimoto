@@ -1492,6 +1492,7 @@ left: 0%;
  .bottommenu{
  	position: relative;
  	top:60px;
+	background-image: url('/image/bg-footer.jpg');
  }
  .bottomlogo{
  	text-align: center;
@@ -1510,7 +1511,7 @@ left: 0%;
  	font-family: "OpenSans Regular";
  	font-size: 17px;
  	letter-spacing: 4px;
- 	color: #191919;
+ 	color: #fff;
  }
   .bottommenu>ul>li>a:hover{
   background-color: none;
@@ -1519,7 +1520,7 @@ left: 0%;
   	font-family: "OpenSans Regular";
  	font-size: 17px;
  	letter-spacing: 4px;
- 	color: #191919;
+ 	color: #8ac058;
   }
   .bottomlinks{
   	border: 0px;
@@ -1558,7 +1559,7 @@ left: 0%;
 	padding-right: 20px;
 }
 .bottomsocial>a:hover{
-	color: #191919;
+	color: #fff;
 }
 .bottomsocial>a>i{
 	margin-bottom: 20px;
