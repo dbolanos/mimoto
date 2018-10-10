@@ -125,7 +125,7 @@
 
                         <select class="combo-search" id="MotoBrand">
                             <option value="0"> AÑO MÁXIMO </option>
-                            @for ($i = 1951; $i < now()->year ; $i++)
+                            @for ($i = 1951; $i < now()->year + 2 ; $i++)
                                 <option value="{{$i}}">{{$i}}</option>
                             @endfor
                         </select>
