@@ -5,13 +5,52 @@
     </div>
     <ul class="nav nav-tabs bottomlinks">
         <li role="presentation" ><a href="#/" role="button">ACERCA DE NOSOTROS</a></li>
-        <li role="presentation"><a href="#/">CATEGORIAS</a></li>
-        <li role="presentation"><a href="#/">PREORDERS</a></li>
+        <li role="presentation"><a href="#/">DESTACADOS</a></li>
+        <li role="presentation"><a href="#/">ANUNCIARME</a></li>
         <li role="presentation"><a href="#/">CONTACTENOS</a></li>
-        <li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>
+        <li role="presentation"><a href="#/">BLOG</a></li>
     </ul>
-    <p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>
-        eiusmod tempor incididunt </p>
+    {{--<p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>--}}
+        {{--eiusmod tempor incididunt </p>--}}
+    <div class="container">
+        <div class="media-container-row content">
+
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    CONTACTENOS
+                </p>
+                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
+                    <a href="#" class="text-black">Telefono: 8777-8777</a>
+                    <br><a href="#" class="text-black">Correo: contacto@mimoto.cr</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    MI CUENTA
+                </p>
+                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
+                    <a href="#" class="text-black">Inicar Sesión</a>
+                    <br><a href="#" class="text-black">Crear Cuenta</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <p class="mb-4 mbr-fonts-style foot-title display-7">
+                    INFORMACIÓN
+                </p>
+                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
+                    <a href="#" class="text-black">Ayuda</a>
+                    <br><a href="#" class="text-black">Términos y Condiciones</a>
+                    <br><a href="#" class="text-black">Soy Nuevo, como empiezo?</a>
+                    <br><a href="#" class="text-black">Mostrar últimos anuncios</a>
+                    <br><a href="#" class="text-black">Articulos</a>
+                    <br><a href="#" class="text-black">Unete a nuestras noticias</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
     <img src="image/line.png" alt="line"> <br>
     <div class="bottomsocial">
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -21,7 +60,7 @@
     </div>
     <div class="footer">
         <div class="copyright">
-            <i class="far fa-copyright"> Copy right 2018 </i>  | <a href="#"> Privacy </a> | <a href="#">Policy</a>
+            <i class="far fa-copyright"> Copy right 2018 </i>  | <a href="#"> Privacidad </a> | <a href="#">Politica</a>
         </div>
         <div class="atisda">
             Creado por Dylan Bolaños y Jonathan Arce.
