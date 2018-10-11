@@ -38,7 +38,7 @@ class CreateAdsMotoTable extends Migration
             $table->integer('district_id')->unsigned();
             $table->foreign('district_id')->references('id')->on('districts');
             $table->integer('type_fuel_id')->unsigned();
-            $table->foreign('type_fuel_id')->references('id')->on('types_fuel');
+            $table->foreign('type_fuel_id')->references('id')->on('type_fuels');
             $table->integer('type_motorcycle_id')->unsigned();
             $table->foreign('type_motorcycle_id')->references('id')->on('type_motorcycles');
             $table->integer('promo_id')->unsigned();

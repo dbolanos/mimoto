@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProvinceCantonDistrictSeeder::class);
         $this->call(MotorcycleBrandSeeder::class);
         $this->call(TypeMotorcycleSeeder::class);
+        $this->call(TypeFuelsSeeder::class);
     }
 }

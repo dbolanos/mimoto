@@ -15,7 +15,7 @@
     <div class="container">
         <div class="media-container-row content">
 
-            <div class="col-md-2 box-ft">
+            <div class="col-md-3 box-ft">
                 <p class="title-2-ft">
                     CONTACTENOS
                 </p>
@@ -25,7 +25,7 @@
                 </p>
             </div>
 
-            <div class="col-md-2  box-ft">
+            <div class="col-md-2 box-ft">
                 <p class="title-2-ft">
                     MI CUENTA
                 </p>
@@ -43,7 +43,7 @@
                     <a href="#" class="">Ayuda</a>
                     <br><a href="#" class="">Términos y Condiciones</a>
                     <br><a href="#" class="">Soy Nuevo, como empiezo?</a>
-                    <br><a href="#" class="">Mostrar últimos anuncios</a>
+                    <br><a href="#" class="">Nuestros Precios</a>
                     <br><a href="#" class="">Articulos</a>
                     <br><a href="#" class="">Unete a nuestras noticias</a>
                 </p>
