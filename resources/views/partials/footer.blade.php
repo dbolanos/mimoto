@@ -1,13 +1,13 @@
 <!-- Start Footer -->
 <div class="bottommenu">
     <div class="bottomlogo">
-        <span class="dotlogo">&bullet;</span><img src="image/collectionlogo1.png" alt="logo1"><span class="dotlogo">&bullet;</span>
+        <span class="dotlogo">&bullet;</span><a href="{{route('index')}}"><img src="image/collectionlogo1.png" alt="logo1"></a><span class="dotlogo">&bullet;</span>
     </div>
     <ul class="nav nav-tabs bottomlinks">
         <li role="presentation" ><a href="#/" role="button">ACERCA DE NOSOTROS</a></li>
         <li role="presentation"><a href="#/">DESTACADOS</a></li>
         <li role="presentation"><a href="#/">ANUNCIARME</a></li>
-        <li role="presentation"><a href="#/">CONTACTENOS</a></li>
+        <li role="presentation"><a href="#/">ANUNCIOS RECIENTES</a></li>
         <li role="presentation"><a href="#/">BLOG</a></li>
     </ul>
     {{--<p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>--}}
@@ -15,37 +15,37 @@
     <div class="container">
         <div class="media-container-row content">
 
-            <div class="col-md-3 col-sm-4">
-                <p class="mb-4 mbr-fonts-style foot-title display-7">
+            <div class="col-md-2 box-ft">
+                <p class="title-2-ft">
                     CONTACTENOS
                 </p>
-                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
-                    <a href="#" class="text-black">Telefono: 8777-8777</a>
-                    <br><a href="#" class="text-black">Correo: contacto@mimoto.cr</a>
+                <p class="options-ft">
+                    <a href="#" class="">Telefono: 8777-8777</a>
+                    <br><a href="#" class="">Correo: contacto@mimoto.cr</a>
                 </p>
             </div>
 
-            <div class="col-md-3 col-sm-4">
-                <p class="mb-4 mbr-fonts-style foot-title display-7">
+            <div class="col-md-2  box-ft">
+                <p class="title-2-ft">
                     MI CUENTA
                 </p>
-                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
-                    <a href="#" class="text-black">Inicar Sesión</a>
-                    <br><a href="#" class="text-black">Crear Cuenta</a>
+                <p class="options-ft">
+                    <a href="#" class="">Inicar Sesión</a>
+                    <br><a href="#" class="">Crear Cuenta</a>
                 </p>
             </div>
 
-            <div class="col-md-3 col-sm-4">
-                <p class="mb-4 mbr-fonts-style foot-title display-7">
+            <div class="col-md-3 box-ft">
+                <p class="title-2-ft">
                     INFORMACIÓN
                 </p>
-                <p class="mbr-text mbr-links-column mbr-fonts-style display-7">
-                    <a href="#" class="text-black">Ayuda</a>
-                    <br><a href="#" class="text-black">Términos y Condiciones</a>
-                    <br><a href="#" class="text-black">Soy Nuevo, como empiezo?</a>
-                    <br><a href="#" class="text-black">Mostrar últimos anuncios</a>
-                    <br><a href="#" class="text-black">Articulos</a>
-                    <br><a href="#" class="text-black">Unete a nuestras noticias</a>
+                <p class="options-ft">
+                    <a href="#" class="">Ayuda</a>
+                    <br><a href="#" class="">Términos y Condiciones</a>
+                    <br><a href="#" class="">Soy Nuevo, como empiezo?</a>
+                    <br><a href="#" class="">Mostrar últimos anuncios</a>
+                    <br><a href="#" class="">Articulos</a>
+                    <br><a href="#" class="">Unete a nuestras noticias</a>
                 </p>
             </div>
 
