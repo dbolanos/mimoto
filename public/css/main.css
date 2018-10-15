@@ -13,6 +13,11 @@ body{
     letter-spacing: 1px;
 }
 
+select{
+	font-family: 'BebasNeue Regular', sans-serif;
+	font-size: 16px;
+}
+
 .allcontain{
 	max-width: 1366px;
 	margin-left: auto;
@@ -389,8 +394,10 @@ font-size: 10pt;
 
 /*Combos Quick Search*/
 .combo-search{
-    font-size: 12px;
-	font-family: 'OpenSans Regular';
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 15px;
+    /*font-size: 12px;*/
+	/*font-family: 'OpenSans Regular';*/
 	border-radius: 15px;
 	border-color: #fff;
 	height: 35px;
@@ -407,9 +414,9 @@ font-size: 10pt;
 
 
 
-.downicon{
-	padding-left: 40px;
-}
+/*.downicon{*/
+	/*padding-left: 20px;*/
+/*}*/
 .midle-nav{
 	background: rgba(248,199,45,.8);
  	border: 0px;

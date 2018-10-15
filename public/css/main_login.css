@@ -126,6 +126,7 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #ebeeef;
+  background-image: url('/image/login_bg.jpg');
 }
 
 
@@ -355,7 +356,7 @@ input.input100 {
   border-radius: 25px;
 
   font-family: BebasNeue Regular;
-  font-size: 16px;
+  font-size: 19px;
   color: #fff;
   line-height: 1.2;
 
