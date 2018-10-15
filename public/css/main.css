@@ -1504,12 +1504,12 @@ left: 0%;
 	top:12px;
 }
 
-.options-ft>a{
+.options-ft-link{
 	color: #6B8592;
 	transition: transform .2s;
 }
 
-.options-ft>a:hover {
+.options-ft-link:hover {
 	color: #fff;
 	font-size: 16px;
 	text-decoration: none;

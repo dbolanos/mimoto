@@ -20,8 +20,8 @@
                     CONTACTENOS
                 </p>
                 <p class="options-ft">
-                    <a href="#" class="">Telefono: 8777-8777</a>
-                    <br><a href="#" class="">Correo: contacto@mimoto.cr</a>
+                    <a href="#" class="options-ft-link">Telefono: 8777-8777</a>
+                    <br><a href="#" class="options-ft-link">Correo: contacto@mimoto.cr</a>
                 </p>
             </div>
 
@@ -30,8 +30,8 @@
                     MI CUENTA
                 </p>
                 <p class="options-ft">
-                    <a href="#" class="">Inicar Sesión</a>
-                    <br><a href="#" class="">Crear Cuenta</a>
+                    <a href="#" class="options-ft-link">Inicar Sesión</a>
+                    <br><a href="#" class="options-ft-link">Crear Cuenta</a>
                 </p>
             </div>
 
@@ -40,12 +40,12 @@
                     INFORMACIÓN
                 </p>
                 <p class="options-ft">
-                    <a href="#" class="">Ayuda</a>
-                    <br><a href="#" class="">Términos y Condiciones</a>
-                    <br><a href="#" class="">Soy Nuevo, como empiezo?</a>
-                    <br><a href="#" class="">Nuestros Precios</a>
-                    <br><a href="#" class="">Articulos</a>
-                    <br><a href="#" class="">Unete a nuestras noticias</a>
+                    <a href="#" class="options-ft-link">Ayuda</a>
+                    <br><a href="#" class="options-ft-link">Términos y Condiciones</a>
+                    <br><a href="#" class="options-ft-link">Soy Nuevo, como empiezo?</a>
+                    <br><a href="#" class="options-ft-link">Nuestros Precios</a>
+                    <br><a href="#" class="options-ft-link">Articulos</a>
+                    <br><a href="#" class="options-ft-link">Unete a nuestras noticias</a>
                 </p>
             </div>
 
