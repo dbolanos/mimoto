@@ -30,8 +30,8 @@
                     MI CUENTA
                 </p>
                 <p class="options-ft">
-                    <a href="#" class="options-ft-link">Inicar Sesión</a>
-                    <br><a href="#" class="options-ft-link">Crear Cuenta</a>
+                    <a href="{{ route('login') }}" class="options-ft-link">Inicar Sesión</a>
+                    <br><a href="{{ route('cliente.registro') }}" class="options-ft-link">Crear Cuenta</a>
                 </p>
             </div>
 

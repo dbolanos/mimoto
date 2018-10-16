@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/main_register.css">
     <!--===============================================================================================-->
 
-<div class="allcontain">
     <div class="container-contact100">
         <div class="wrap-contact100">
             <div class="contact100-form-title" style="background-image: url(image/motor_1.jpg);">

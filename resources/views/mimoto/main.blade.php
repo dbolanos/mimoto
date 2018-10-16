@@ -3,7 +3,7 @@
 @section('contain')
 
 <!-- Start Carousel Section -->
-<div class="allcontain">
+
     <div id="carousel-up" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner " role="listbox">
             <div class="item active">

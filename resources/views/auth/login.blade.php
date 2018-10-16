@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/util_login.css">
     <link rel="stylesheet" type="text/css" href="css/main_login.css">
     <!--===============================================================================================-->
-<div class="allcontain">
+
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
