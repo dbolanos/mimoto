@@ -69,7 +69,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">CONTACTO</a>
+                    <a href="{{route('contactenos')}}">CONTACTO</a>
 
                 </li>
                 <button><span class="postnewcar">ANUNCIESE AQUI </span></button>

@@ -16,6 +16,7 @@
 //})->name('index');
 
 Route::get('/',                     ['as' => 'index'                    , 'uses'  => 'HomeController@index']);
+Route::get('/contactenos',          ['as' => 'contactenos'              , 'uses'  => 'HomeController@contactenos']);
 
 Auth::routes();
 
@@ -25,5 +26,6 @@ Route::get('cliente-registro',      ['as' => 'cliente.registro'         , 'uses'
 
 //Get Cantones and Districts by Province
 Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'  => 'DistrictController@getCantonsDistricts']);
+
 
 

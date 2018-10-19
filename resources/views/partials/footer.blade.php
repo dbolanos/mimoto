@@ -21,7 +21,7 @@
                 </p>
                 <p class="options-ft">
                     <a href="#" class="options-ft-link">Telefono: 8777-8777</a>
-                    <br><a href="#" class="options-ft-link">Correo: contacto@mimoto.cr</a>
+                    <br><a href="{{route('contactenos')}}" class="options-ft-link">Correo: contacto@mimoto.cr</a>
                 </p>
             </div>
 

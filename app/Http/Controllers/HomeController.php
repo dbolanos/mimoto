@@ -32,4 +32,8 @@ class HomeController extends Controller
 
         return view('mimoto.main', compact('motorcycle_brands', 'type_motorcycles'));
     }
+
+    public function contactenos(){
+        return view('contact_us.contact_us');
+    }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypesAdMotoTable extends Migration
+class CreateTypePromosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateTypesAdMotoTable extends Migration
      */
     public function up()
     {
-        Schema::create('types_ad_moto', function (Blueprint $table) {
+        Schema::create('type_promos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('description');
-            $table->integer('price');
             $table->boolean('status')->default(true);
             $table->timestamps();
         });
@@ -29,6 +28,6 @@ class CreateTypesAdMotoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('types_ad_moto');
+        Schema::dropIfExists('type_promos');
     }
 }

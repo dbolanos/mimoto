@@ -31,12 +31,8 @@
 }
 
 /*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 
-select{
-  font-family: 'BebasNeue Regular', sans-serif;
-  font-size: 16px;
-}
+/*---------------------------------------------*/
 
 
 /*---------------------------------------------*/
@@ -121,7 +117,6 @@ iframe {
   background: transparent;
   position: relative;
   z-index: 1;
-  background-image: url(../image/tire-track-background.jpg);
 }
 
 .contact100-map {
@@ -163,25 +158,25 @@ iframe {
   padding: 64px 15px 64px 15px;
 }
 
+.form-contact-us{
+    border: 3px solid #8ac058;
+}
+
 .contact100-form-title-1 {
-  font-family: 'BebasNeue Regular';
-  font-size: 28px;
+  font-family: Poppins-Bold;
+  font-size: 20px;
   color: #fff;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px;
-  color: #fff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .contact100-form-title-2 {
-  font-family: 'BebasNeue Regular';
-  font-size: 22px;
+  font-family: BebasNeue Regular;
+  font-size: 15px;
   color: #fff;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
@@ -213,9 +208,6 @@ iframe {
   padding: 43px 88px 57px 190px;
 }
 
-.form_register {
-    border: 3px solid #8ac058;
-}
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -227,16 +219,9 @@ iframe {
   margin-bottom: 26px;
 }
 
-.wrap-combo100 {
-  width: 100%;
-  position: relative;
-  margin-bottom: 26px;
-}
-
-
 .label-input100 {
-  font-family: 'BebasNeue Regular';
-  font-size: 17px;
+  font-family: BebasNeue Regular;
+  font-size: 15px;
   color: #313943;
   line-height: 1.2;
   text-align: right;
@@ -248,26 +233,12 @@ iframe {
 
 }
 
-.invalid-feedback{
-    color: darkred;
-}
-
-/*------------------------------------------------------------------
-[ combo ]*/
-.combo-signup{
-  border-radius: 15px;
-  border-color: black;
-  height: 35px;
-  width: 235px;
-}
-
 /*---------------------------------------------*/
 .input100 {
-  font-family: 'BebasNeue Regular';
+  font-family: BebasNeue Regular;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
-  /*color: #C59E47;*/
 
   display: block;
   width: 100%;
@@ -352,8 +323,8 @@ textarea.input100 {
   background-color: #57b846;
   border-radius: 25px;
 
-  font-family: 'BebasNeue Regular';
-  font-size: 19px;
+  font-family: BebasNeue Regular;
+  font-size: 16px;
   color: #fff;
   line-height: 1.2;
 
@@ -432,7 +403,7 @@ textarea.input100 {
   right: 2px;
   pointer-events: none;
 
-  font-family: 'BebasNeue Regular';
+  font-family: Poppins-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
