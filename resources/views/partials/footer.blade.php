@@ -60,7 +60,7 @@
     </div>
     <div class="footer">
         <div class="copyright">
-            <i class="far fa-copyright"> Copy right 2018 </i>  | <a href="#"> Privacidad </a> | <a href="#">Politica</a>
+            <i class="far fa-copyright"> Copy right {{now()->year}} </i>  | <a href="#"> Privacidad </a> | <a href="#">Politica</a>
         </div>
         <div class="atisda">
             Creado por Dylan Bolaños y Jonathan Arce.

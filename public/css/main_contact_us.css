@@ -117,6 +117,7 @@ iframe {
   background: transparent;
   position: relative;
   z-index: 1;
+  background-image: url(../image/contact_bg.jpg);
 }
 
 .contact100-map {
@@ -150,7 +151,7 @@ iframe {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-
+  background-image: url(image/contact_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -163,20 +164,22 @@ iframe {
 }
 
 .contact100-form-title-1 {
-  font-family: Poppins-Bold;
-  font-size: 20px;
+  font-family: BebasNeue Regular;
+  font-size: 30px;
   color: #fff;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .contact100-form-title-2 {
   font-family: BebasNeue Regular;
-  font-size: 15px;
+  font-size: 22px;
   color: #fff;
   line-height: 1.5;
   text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
@@ -221,7 +224,7 @@ iframe {
 
 .label-input100 {
   font-family: BebasNeue Regular;
-  font-size: 15px;
+  font-size: 17px;
   color: #313943;
   line-height: 1.2;
   text-align: right;
@@ -284,6 +287,7 @@ textarea.input100 {
   min-height: 115px;
   padding-top: 14px;
   padding-bottom: 13px;
+  max-width: 390px;
 }
 
 
@@ -324,7 +328,7 @@ textarea.input100 {
   border-radius: 25px;
 
   font-family: BebasNeue Regular;
-  font-size: 16px;
+  font-size:19px;
   color: #fff;
   line-height: 1.2;
 

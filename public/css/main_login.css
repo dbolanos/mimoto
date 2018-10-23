@@ -102,7 +102,7 @@ iframe {
   font-family: BebasNeue Regular;
   font-size: 15px;
   line-height: 1.4;
-  color: #999999;
+  color: #7F7F7F;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -288,7 +288,7 @@ input.input100 {
 .label-checkbox100 {
   font-family: BebasNeue Regular;
   font-size: 15px;
-  color: #999999;
+  color: #7F7F7F;
   line-height: 1.4;
 
   display: block;
