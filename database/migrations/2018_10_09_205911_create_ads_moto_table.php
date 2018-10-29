@@ -22,7 +22,7 @@ class CreateAdsMotoTable extends Migration
             $table->integer('price_dollars')->default(0);
             $table->integer('mileage')->default(0);
             $table->smallInteger('displacement');
-            $table->boolean('status')->default(true);
+            $table->boolean('ad_status')->default(true);
             $table->text('extras_moto');
             $table->string('email_ad',128);
             $table->string('phone_ad',128);
