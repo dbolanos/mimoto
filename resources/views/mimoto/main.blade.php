@@ -55,7 +55,7 @@
 
                     <li class="li-category">
 
-                        <select class="combo-search" id="MotoBrand">
+                        <select class="combo-mimoto" id="MotoBrand">
                             <option value="0"> MARCA </option>
                             @foreach ($motorcycle_brands as $motorcycle_brand)
                                 <option value="{{$motorcycle_brand->id}}"> {{$motorcycle_brand->description}} </option>
@@ -74,7 +74,7 @@
                                 {{--<option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>--}}
                             {{--@endforeach--}}
                         {{--</ul>--}}
-                        <select class="combo-search" id="MotoBrand">
+                        <select class="combo-mimoto" id="MotoBrand">
                             <option value="0"> CATEGORÍA </option>
                             @foreach ($type_motorcycles as $type_motorcycles)
                                 <option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>
@@ -104,7 +104,7 @@
                                 {{--@endfor--}}
                             {{--</select>--}}
 
-                        <select class="combo-search" id="MotoBrand">
+                        <select class="combo-mimoto" id="MotoBrand">
                             <option value="0"> AÑO MÍNIMO </option>
                             @for ($i = now()->year; $i > 1949 ; $i--)
                                 <option value="{{$i}}">{{$i}}</option>
@@ -123,7 +123,7 @@
                             {{--@endfor--}}
                         {{--</ul>--}}
 
-                        <select class="combo-search" id="MotoBrand">
+                        <select class="combo-mimoto" id="MotoBrand">
                             <option value="0"> AÑO MÁXIMO </option>
                             @for ($i = now()->year + 2; $i > 1951 ; $i--)
                                 <option value="{{$i}}">{{$i}}</option>

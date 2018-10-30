@@ -177,7 +177,7 @@ padding-left: 5%;
   }
 
 
- #navbarontop>button{
+ #navbarontop>.ad-here{
  	background: none;
  	background-color: none;
  	border: 2px solid #8ac058;
@@ -187,13 +187,19 @@ padding-left: 5%;
   	color: #313943;
   	padding-left: 19px;
   	padding-right: 19px;
-  	padding-top: -2px;
-  	padding-bottom:-2px;
+  	padding-top: 4px;
+  	padding-bottom:2px;
+	text-decoration: none;
  }
- #navbarontop>button:hover{
+ #navbarontop>.ad-here:hover{
  	background-color: #8ac058;
  	color: #fff;
+	text-decoration: none;
  }
+
+
+
+
  .dropdowncostume{
  	margin-left: 0px;
  }
@@ -393,7 +399,7 @@ font-size: 10pt;
 /* -----------------------------Second Navbar ---------------------------------------*/
 
 /*Combos Quick Search*/
-.combo-search{
+.combo-mimoto{
 	font-family: 'Roboto Light', sans-serif;
 	font-size: 15px;
     /*font-size: 12px;*/
@@ -408,7 +414,7 @@ font-size: 10pt;
 	padding-left: 10px;
 }
 
-.combo-search:hover{
+.combo-mimoto:hover{
     background-color: #9BD16C;
 }
 

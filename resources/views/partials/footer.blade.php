@@ -6,7 +6,7 @@
     <ul class="nav nav-tabs bottomlinks">
         <li role="presentation" ><a href="#/" role="button">ACERCA DE NOSOTROS</a></li>
         <li role="presentation"><a href="#/">DESTACADOS</a></li>
-        <li role="presentation"><a href="#/">ANUNCIARME</a></li>
+        <li role="presentation"><a href="{{route('crear.anuncio')}}">ANUNCIARME</a></li>
         <li role="presentation"><a href="#/">ANUNCIOS RECIENTES</a></li>
         <li role="presentation"><a href="#/">BLOG</a></li>
     </ul>

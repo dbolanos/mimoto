@@ -28,4 +28,5 @@ Route::get('cliente-registro',      ['as' => 'cliente.registro'         , 'uses'
 Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'  => 'DistrictController@getCantonsDistricts']);
 
 
-
+//Create Ad Motos
+Route::get('/crear-anuncio',          ['as' => 'crear.anuncio'          , 'uses'  => 'AdMotoController@getCreateAdMoto']);

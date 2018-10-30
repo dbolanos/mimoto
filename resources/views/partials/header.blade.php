@@ -72,7 +72,7 @@
                     <a href="{{route('contactenos')}}">CONTACTO</a>
 
                 </li>
-                <button><span class="postnewcar">ANUNCIESE AQUI </span></button>
+                <a href="{{route('crear.anuncio')}}" class="ad-here"><span class="postnewcar">ANUNCIESE AQUI </span></a>
             </ul>
         </div>
     </nav>
