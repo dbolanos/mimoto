@@ -177,7 +177,7 @@ padding-left: 5%;
   }
 
 
- #navbarontop>button{
+ #navbarontop>.ad-here{
  	background: none;
  	background-color: none;
  	border: 2px solid #8ac058;
@@ -187,13 +187,19 @@ padding-left: 5%;
   	color: #313943;
   	padding-left: 19px;
   	padding-right: 19px;
-  	padding-top: -2px;
-  	padding-bottom:-2px;
+  	padding-top: 4px;
+  	padding-bottom:2px;
+	text-decoration: none;
  }
- #navbarontop>button:hover{
+ #navbarontop>.ad-here:hover{
  	background-color: #8ac058;
  	color: #fff;
+	text-decoration: none;
  }
+
+
+
+
  .dropdowncostume{
  	margin-left: 0px;
  }
@@ -393,7 +399,7 @@ font-size: 10pt;
 /* -----------------------------Second Navbar ---------------------------------------*/
 
 /*Combos Quick Search*/
-.combo-search{
+.combo-mimoto{
 	font-family: 'Roboto Light', sans-serif;
 	font-size: 15px;
     /*font-size: 12px;*/
@@ -408,7 +414,7 @@ font-size: 10pt;
 	padding-left: 10px;
 }
 
-.combo-search:hover{
+.combo-mimoto:hover{
     background-color: #9BD16C;
 }
 
@@ -1756,6 +1762,101 @@ height: 30px;
 }
 
 
+
+/*START CSS BOXES*/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+	font-family: Raleway, sans-serif
+}
+
+.p-1 {
+	padding: .25rem
+}
+
+.py-4 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem
+}
+
+.card {
+	background-color: #8ac058;
+	overflow: hidden;
+	position: relative;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem
+}
+
+.card .card-img-top {
+	width: 100%;
+	border-top-left-radius: calc(.25rem - 1px);
+	border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card-note {
+	background-color: #d32d41;
+	position: absolute;
+	top: 26px;
+	cursor: pointer;
+	width: 175px;
+	color: #fff;
+	left: -40px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.card-note .card-note-text {
+	color: #fff;
+	font-weight: 700
+}
+
+.card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem
+}
+
+.card-body .card-text, .card-body .card-title {
+	background: #fff;
+	border-radius: 3px;
+	padding: 5px
+}
+
+.card-body .card-title {
+	margin-bottom: .75rem
+}
+
+.camera-number {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	margin: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, .46);
+	padding: 2px 5px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	z-index: 1;
+	-webkit-border-radius: 2px
+}
+
+.price {
+	color: #1f3f49;
+	font-size: 20px;
+	padding-top: 2px
+}
+/*END CSS BOXES*/
 
 
 

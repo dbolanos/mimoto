@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(TypeMotorcycleSeeder::class);
         $this->call(TypeFuelsSeeder::class);
         $this->call(TypeAdMotosSeeder::class);
+        $this->call(ExtrasMotoSeeder::class);
     }
 }

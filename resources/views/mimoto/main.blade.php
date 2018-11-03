@@ -2,8 +2,9 @@
 @section('title','Principal')
 @section('contain')
 
+    <!-- Start Carousel Section -->
+
     <div id="carousel-up" class="carousel slide" data-ride="carousel">
-        <!-- START CAROUSEL SECTION -->
         <div class="carousel-inner " role="listbox">
             <div class="item active">
                 <img src="image/oldcar.jpg" alt="oldcar">
@@ -30,12 +31,9 @@
                 </div>
             </div>
         </div>
-        <!-- END CAROUSEL SECTION -->
-
         <nav class="navbar navbar-default midle-nav">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse"
-                        data-target="#navbarmidle" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse" data-target="#navbarmidle" aria-expanded="false">
                     <h1>Buscar</h1>
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -43,26 +41,41 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-
             <div class="collapse navbar-collapse" id="navbarmidle">
                 <div class="searchtxt">
                     <h1>Busqueda Rápida:</h1>
                 </div>
 
+                {{--<div class="form-group">--}}
+                {{--<input type="text" class="form-control searchform" placeholder="Enter Keyword">--}}
+                {{--</div>--}}
+
+
                 <ul class="nav navbar-nav navbarborder">
-                    <!-- START COMBO SELECTION SECTION -->
+
                     <li class="li-category">
-                        <select class="combo-search" id="MotoBrand">
-                            <option value="0"> MARCA</option>
+
+                        <select class="combo-mimoto" id="MotoBrand">
+                            <option value="0"> MARCA </option>
                             @foreach ($motorcycle_brands as $motorcycle_brand)
                                 <option value="{{$motorcycle_brand->id}}"> {{$motorcycle_brand->description}} </option>
                             @endforeach
                         </select>
+
                     </li>
 
                     <li class="li-category">
-                        <select class="combo-search" id="MotoBrand">
-                            <option value="0"> CATEGORÍA</option>
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+                        {{--Categoría--}}
+                        {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                        {{--@foreach ($type_motorcycles as $type_motorcycles)--}}
+                        {{--<option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>--}}
+                        {{--@endforeach--}}
+                        {{--</ul>--}}
+                        <select class="combo-mimoto" id="MotoBrand">
+                            <option value="0"> CATEGORÍA </option>
                             @foreach ($type_motorcycles as $type_motorcycles)
                                 <option value="{{$type_motorcycles->id}}"> {{$type_motorcycles->description}} </option>
                             @endforeach
@@ -71,8 +84,28 @@
 
 
                     <li class="li-category">
-                        <select class="combo-search" id="MotoBrand">
-                            <option value="0"> AÑO MÍNIMO</option>
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+
+                        {{--Año Minimo--}}
+                        {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                        {{--@for ($i = 1950; $i < now()->year ; $i++)--}}
+                        {{--<li><a href="#">{{$i}}</a></li>--}}
+                        {{--@endfor--}}
+                        {{--</ul>--}}
+
+                        {{--<label for="mydd" class="btn  dropdown-toggle btn-costume" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Año Minimo--}}
+                        {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</label>--}}
+                        {{--<select class="form-control dropdown-menu" id="mydd">--}}
+                        {{--@for ($i = 1950; $i < now()->year ; $i++)--}}
+                        {{--<option>{{$i}}</option>--}}
+                        {{--@endfor--}}
+                        {{--</select>--}}
+
+                        <select class="combo-mimoto" id="MotoBrand">
+                            <option value="0"> AÑO MÍNIMO </option>
                             @for ($i = now()->year; $i > 1949 ; $i--)
                                 <option value="{{$i}}">{{$i}}</option>
                             @endfor
@@ -80,34 +113,43 @@
                     </li>
 
                     <li class="li-category">
-                        <select class="combo-search" id="MotoBrand">
-                            <option value="0"> AÑO MÁXIMO</option>
+                        {{--<a class="btn  dropdown-toggle btn-costume"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">--}}
+                        {{--Año Maximo--}}
+                        {{--<span class="glyphicon glyphicon-chevron-down downicon"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu" id="mydd">--}}
+                        {{--@for ($i = 1951; $i < now()->year + 2 ; $i++)--}}
+                        {{--<li><a href="#">{{$i}}</a></li>--}}
+                        {{--@endfor--}}
+                        {{--</ul>--}}
+
+                        <select class="combo-mimoto" id="MotoBrand">
+                            <option value="0"> AÑO MÁXIMO </option>
                             @for ($i = now()->year + 2; $i > 1951 ; $i--)
                                 <option value="{{$i}}">{{$i}}</option>
                             @endfor
                         </select>
+
                     </li>
-                    <!-- END COMBO SELECTION SECTION -->
 
                     <li class="li-slideprice">
-                        <p><label class="slidertxt" for="amount">Precio </label>
+                        <p> <label class="slidertxt" for="amount">Precio </label>
                             <input class="priceslider" type="text" id="amount" readonly="readonly">
                         </p>
                         <div id="slider-range"></div>
 
                     </li>
-
                     <li class="li-search">
-                        <button class="searchbutton"><i class="fas fa-search"></i> Buscar</button>
+                        <button class="searchbutton"><i class="fas fa-search"></i> Buscar </button>
                     </li>
-
                 </ul>
+
             </div>
         </nav>
     </div>
-
-
-    <!-- START PREMIUM ANNOUNCEMENTS SECTION -->
+    </div>
+    <!-- End Carousel Section -->
+    <!--  Start Featured Section -->
     <div class="allcontain">
         <div class="feturedsection">
             <h1 class="text-center">
@@ -116,74 +158,78 @@
         </div>
         <div class="feturedimage">
             <div class="row firstrow">
-                <div class="col-lg-3 costumcol colborder1">
-                    <div class="costumrow">
-                        <div>
-                            <div class="featurecontant">
-                                <h1>LOREM IPSUM</h1>
-                                <p>"Lorem ipsum dolor sit amet, consectetur ,<br>
-                                    sed do eiusmod tempor incididunt </p>
-                                <h2>&cent; 2,475,000</h2>
-                                <button id="btnRM">VER MÁS</button>
+                <div class="col-sm-4 col-md-3">
+                    <div class="container py-4">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
+                            <div class="card-note p-1 text-center">
+                                <span class="card-note-text">PREMIUM</span>
+                            </div>
+                            <p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i> 6</p>
+                            <div class="card-body">
+                                <h4 class="card-title">Honda <span class="price float-right">¢ 2,475,000</span></h4>
+                                <h5 class="card-text">XR | 1999 | 4 Tiempos</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 costumcol colborder2">
-                    <div class="costumrow">
-                        <div>
-                            <div class="featurecontant">
-                                <h1>LOREM IPSUM</h1>
-                                <p>"Lorem ipsum dolor sit amet, consectetur ,<br>
-                                    sed do eiusmod tempor incididunt </p>
-                                <h2>Price &euro;</h2>
-                                <button id="btnRM2">VER MÁS</button>
+                <div class="col-sm-4 col-md-3">
+                    <div class="container py-4">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
+                            <div class="card-note p-1 text-center">
+                                <span class="card-note-text">PREMIUM</span>
+                            </div>
+                            <p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i> 6</p>
+                            <div class="card-body">
+                                <h4 class="card-title">Honda <span class="price float-right">¢ 2,475,000</span></h4>
+                                <h5 class="card-text">XR | 1999 | 4 Tiempos</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 costumcol colborder2">
-                    <div class="costumrow">
-                        <div>
-                            <div class="featurecontant">
-                                <h1>LOREM IPSUM</h1>
-                                <p>"Lorem ipsum dolor sit amet, consectetur ,<br>
-                                    sed do eiusmod tempor incididunt </p>
-                                <h2>Price &euro;</h2>
-                                <button id="btnRM2">VER MÁS</button>
+                <div class="col-sm-4 col-md-3">
+                    <div class="container py-4">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
+                            <div class="card-note p-1 text-center">
+                                <span class="card-note-text">PREMIUM</span>
+                            </div>
+                            <p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i> 6</p>
+                            <div class="card-body">
+                                <h4 class="card-title">Honda <span class="price float-right">¢ 2,475,000</span></h4>
+                                <h5 class="card-text">XR | 1999 | 4 Tiempos</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 costumcol colborder2">
-                    <div class="costumrow">
-                        <div>
-                            <div class="featurecontant">
-                                <h1>LOREM IPSUM</h1>
-                                <p>"Lorem ipsum dolor sit amet, consectetur ,<br>
-                                    sed do eiusmod tempor incididunt </p>
-                                <h2>Price &euro;</h2>
-                                <button id="btnRM2">VER MÁS</button>
+                <div class="col-sm-4 col-md-3">
+                    <div class="container py-4">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
+                            <div class="card-note p-1 text-center">
+                                <span class="card-note-text">PREMIUM</span>
+                            </div>
+                            <p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i> 6</p>
+                            <div class="card-body">
+                                <h4 class="card-title">Honda <span class="price float-right">¢ 2,475,000</span></h4>
+                                <h5 class="card-text">XR | 1999 | 4 Tiempos</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END PREMIUM ANNOUNCEMENTS SECTION -->
-
-
+        <!-- LATEST MOTOS SECTION -->
         <div class="latestcars">
-            <h1 class="text-center">&bullet; LATEST MOTOS &bullet;</h1>
+            <h1 class="text-center">&bullet; LATEST   MOTOS &bullet;</h1>
             <ul class="nav nav-tabs navbar-left latest-navleft">
                 <li role="presentation" class="li-sortby"><span class="sortby">SORT BY: </span></li>
-                <li data-filter=".RECENT" role="presentation"><a href="#mostrecent" class="prcBtnR">MOST RECENT </a>
-                </li>
-                <li data-filter=".POPULAR" role="presentation"><a href="#mostpopular" class="prcBtnR">MOST POPULAR </a>
-                </li>
-                <li role="presentation"><a href="#" class="alphSort">ALPHABETICAL </a></li>
+                <li data-filter=".RECENT" role="presentation"><a href="#mostrecent" class="prcBtnR">MOST RECENT </a></li>
+                <li data-filter=".POPULAR" role="presentation"><a href="#mostpopular" class="prcBtnR">MOST POPULAR </a></li>
+                <li  role="presentation"><a href="#" class="alphSort">ALPHABETICAL </a></li>
                 <li data-filter=".HPRICE" role="presentation"><a href="#" class="prcBtnH">HIGHEST PRICE </a></li>
-                <li data-filter=".LPRICE" role="presentation"><a href="#" class="prcBtnL">LOWEST PRICE </a></li>
+                <li data-filter=".LPRICE" role="presentation"><a href="#" class="prcBtnL">LOWEST  PRICE </a></li>
                 <li id="hideonmobile">
             </ul>
         </div>
@@ -206,13 +252,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price"> 1000&euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -237,13 +280,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">900 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -268,13 +308,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">3000 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -299,13 +336,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">1000 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -330,13 +364,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">1200 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -361,13 +392,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">4000 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -392,13 +420,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">3000 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -423,13 +448,10 @@
                                 <p>"Lorem ipsum dolor sit amet, consectetur,<br>
                                     sed do eiusmod tempor incididunt" </p>
                                 <h4 class="price">2500 &euro;</h4>
-                                <button>READ MORE</button>
-                                <br>
+                                <button>READ MORE</button><br>
                                 <div class="wishtxt">
-                                    <p class="paragraph1"> Add to Wishlist <span
-                                                class="glyphicon glyphicon-heart"></span></p>
-                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png"
-                                                                                          alt="compicon"></span></p>
+                                    <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
+                                    <p class="paragraph2">Compare <span class="icon"><img src="image/compicon.png" alt="compicon"></span></p>
                                 </div>
                             </div>
                             <div class="stars2">
@@ -457,5 +479,5 @@
                 <button>SUBSCRIBE</button>
             </div>
         </div>
-    </div>
+
 @endsection
