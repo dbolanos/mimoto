@@ -44,7 +44,7 @@ class CreateAdMotosTable extends Migration
             $table->integer('promo_id')->unsigned();
             $table->foreign('promo_id')->references('id')->on('promotions');
             $table->integer('type_ad_moto_id')->unsigned();
-            $table->foreign('type_ad_moto_id')->references('id')->on('types_ad_moto');
+            $table->foreign('type_ad_moto_id')->references('id')->on('type_ad_motos');
 
 
             $table->timestamps();

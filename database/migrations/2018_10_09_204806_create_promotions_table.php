@@ -21,7 +21,7 @@ class CreatePromotionsTable extends Migration
             $table->integer('monto_aplicado');
             $table->integer('porcentaje_aplicado');
             $table->integer('type_promo_id')->unsigned();
-            $table->foreign('type_promo_id')->references('id')->on('types_promo');
+            $table->foreign('type_promo_id')->references('id')->on('type_promos');
             $table->integer('promotion_rules_id')->unsigned();
             $table->foreign('promotion_rules_id')->references('id')->on('promotion_rules');
             //Todo history about who did the new promo or edited a promo
