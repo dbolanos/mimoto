@@ -77,4 +77,6 @@
 <script type="text/javascript" src="{{ asset('source/js/myscript.js') }}"></script>
 <script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/jquery.1.11.js') }}"></script>
 <script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/slick-slider-setting.js"></script>
 

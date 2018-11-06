@@ -157,9 +157,9 @@
             </h1>
         </div>
         <div class="feturedimage">
-            <div class="row firstrow">
-                <div class="col-sm-4 col-md-3">
-                    <div class="container py-4">
+            <div class=" firstrow">
+
+                    <div class="py-4">
                         <div class="card" style="width: 300px;">
                             <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
                             <div class="card-note p-1 text-center">
@@ -172,9 +172,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="container py-4">
+
+                    <div class="py-4">
                         <div class="card" style="width: 300px;">
                             <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
                             <div class="card-note p-1 text-center">
@@ -187,9 +186,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="container py-4">
+
+                    <div class="py-4">
                         <div class="card" style="width: 300px;">
                             <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
                             <div class="card-note p-1 text-center">
@@ -202,9 +200,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="container py-4">
+
+
+                    <div class="py-4">
                         <div class="card" style="width: 300px;">
                             <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
                             <div class="card-note p-1 text-center">
@@ -217,7 +215,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
+
+                    <div class="py-4">
+                        <div class="card" style="width: 300px;">
+                            <img class="card-img-top" src="https://www.arpem.com/imagenes/ficha/8/0/0/4/honda-xr-400-r.708004.jpg" alt="Card image cap">
+                            <div class="card-note p-1 text-center">
+                                <span class="card-note-text">PREMIUM</span>
+                            </div>
+                            <p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i> 6</p>
+                            <div class="card-body">
+                                <h4 class="card-title">Honda <span class="price float-right">¢ 2,475,000</span></h4>
+                                <h5 class="card-text">XR | 1999 | 4 Tiempos</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
         </div>
         <!-- LATEST MOTOS SECTION -->

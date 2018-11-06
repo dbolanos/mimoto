@@ -1780,6 +1780,7 @@ height: 30px;
 }
 
 .card {
+	margin: 0 auto;
 	background-color: #8ac058;
 	overflow: hidden;
 	position: relative;
