@@ -30,3 +30,4 @@ Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'
 
 //Create Ad Motos
 Route::get('/crear-anuncio',          ['as' => 'crear.anuncio'          , 'uses'  => 'AdMotoController@getCreateAdMoto']);
+Route::post('/generar-anuncio',       ['as' => 'generar.anuncio'        , 'uses'  => 'AdMotoController@createAdMoto']);

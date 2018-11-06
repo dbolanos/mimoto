@@ -935,7 +935,7 @@ font-weight: bold;
 	margin-right: 20px;
 	margin-left: 20px;
 }
-#readmore>button{
+.regular_button{
 	background: none;
 	border: 1px solid #020243;
 	font-family: "OpenSans Regular";
@@ -1764,11 +1764,11 @@ height: 30px;
 
 
 /*START CSS BOXES*/
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
 
-* {
-	font-family: Raleway, sans-serif
-}
+/** {*/
+	/*font-family: Raleway, sans-serif*/
+/*}*/
 
 .p-1 {
 	padding: .25rem

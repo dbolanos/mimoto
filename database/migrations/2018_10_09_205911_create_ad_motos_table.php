@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdsMotoTable extends Migration
+class CreateAdMotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAdsMotoTable extends Migration
      */
     public function up()
     {
-        Schema::create('ads_moto', function (Blueprint $table) {
+        Schema::create('ad_motos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title',100);
             $table->string('description',250);
@@ -58,6 +58,6 @@ class CreateAdsMotoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ads_moto');
+        Schema::dropIfExists('ad_motos');
     }
 }
