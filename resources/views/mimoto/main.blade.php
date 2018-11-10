@@ -1,10 +1,14 @@
 @extends('layouts.master')
 @section('title','Principal')
+
+@section('customCss')
+<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+@endsection
+
 @section('contain')
 
-    <!-- Start Carousel Section -->
-
     <div id="carousel-up" class="carousel slide" data-ride="carousel">
+        <!-- START CAROUSEL BOOTSTRAP SECTION -->
         <div class="carousel-inner " role="listbox">
             <div class="item active">
                 <img src="image/oldcar.jpg" alt="oldcar">
@@ -31,6 +35,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- END CAROUSEL BOOTSTRAP SECTION -->
+
         <nav class="navbar navbar-default midle-nav">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse" data-target="#navbarmidle" aria-expanded="false">
@@ -494,4 +501,9 @@
             </div>
         </div>
 
+@endsection
+
+@section('customScripts')
+    <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/slick-slider-setting.js') }}"></script>
 @endsection

@@ -9,12 +9,16 @@
     <link rel="icon" type="image/png" href="/image/mimoto_icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Styles -->
+    <!-- START STYLE -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link href="{{ asset('source/bootstrap-3.3.6-dist/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <!-- END STYLE -->
+
+    <!-- START CUSTOM STYLE -->
+        @yield('customCss')
+    <!-- END CUSTOM STYLE -->
 
 </head>
 <body>
@@ -23,8 +27,15 @@
 
     @yield('contain')
 
-
     @include('partials.footer')
 </div>
+<!-- START CUSTOM SCRIPT -->
+<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+<!-- END CUSTOM SCRIPT -->
+
+<!-- START CUSTOM SCRIPT -->
+    @yield('customScripts')
+<!-- END CUSTOM SCRIPT -->
 </body>
 </html>

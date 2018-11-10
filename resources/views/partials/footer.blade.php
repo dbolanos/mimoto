@@ -68,15 +68,7 @@
     </div>
 </div>
 <!-- End Footer -->
+
 </div> <!--Close All Contain -->
 
-<!-- Scripts -->
-{{--<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>--}}
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/js/isotope.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/js/myscript.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/jquery.1.11.js') }}"></script>
-<script type="text/javascript" src="{{ asset('source/bootstrap-3.3.6-dist/js/bootstrap.js') }}"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/slick-slider-setting.js"></script>
 
