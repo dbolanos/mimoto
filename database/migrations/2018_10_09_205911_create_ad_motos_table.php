@@ -23,14 +23,14 @@ class CreateAdMotosTable extends Migration
             $table->integer('mileage')->default(0);
             $table->smallInteger('displacement');
             $table->boolean('ad_status')->default(true);
-            $table->text('extras_moto');
+            $table->text('extras_moto')->nullable();
             $table->string('email_ad',128);
             $table->string('phone_ad',128);
             $table->boolean('show_user_email')->default(true);
             $table->boolean('show_user_phone')->default(true);
-            $table->dateTime('ad_start_day');
-            $table->dateTime('ad_end_day');
-            $table->text('extras_ad');
+            $table->dateTime('ad_start_date');
+            $table->dateTime('ad_end_date');
+            $table->text('extras_ad')->nullable();
             $table->integer('total_cost_ad_colones')->default(0);
             $table->integer('total_cost_ad_dollars')->default(0);
             $table->integer('motorcycle_brand_id')->unsigned();
@@ -41,7 +41,7 @@ class CreateAdMotosTable extends Migration
             $table->foreign('type_fuel_id')->references('id')->on('type_fuels');
             $table->integer('type_motorcycle_id')->unsigned();
             $table->foreign('type_motorcycle_id')->references('id')->on('type_motorcycles');
-            $table->integer('promo_id')->unsigned();
+            $table->integer('promo_id')->unsigned()->nullable();
             $table->foreign('promo_id')->references('id')->on('promotions');
             $table->integer('type_ad_moto_id')->unsigned();
             $table->foreign('type_ad_moto_id')->references('id')->on('type_ad_motos');

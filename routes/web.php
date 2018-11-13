@@ -31,3 +31,8 @@ Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'
 //Create Ad Motos
 Route::get('/crear-anuncio',          ['as' => 'crear.anuncio'          , 'uses'  => 'AdMotoController@getCreateAdMoto']);
 Route::post('/generar-anuncio',       ['as' => 'generar.anuncio'        , 'uses'  => 'AdMotoController@createAdMoto']);
+
+
+Route::post('/images-save', 'UploadImagesController@store');
+Route::post('/images-delete', 'UploadImagesController@destroy');
+Route::get('/images-show', 'UploadImagesController@index');
