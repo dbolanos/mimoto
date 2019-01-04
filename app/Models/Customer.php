@@ -8,10 +8,10 @@ class Customer extends Model
 {
     //
     protected $table    = 'customers';
-    protected $guarded  = 'id';
+    protected $guarded  = ['id'];
 
     public function district(){
-        return $this->hasOne('App\Models\District');
+        return $this->belongsTo('App\Models\District');
     }
 
     /**
@@ -19,7 +19,7 @@ class Customer extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 
 }

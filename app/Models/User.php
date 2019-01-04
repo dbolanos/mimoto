@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'status'
     ];
 
     /**
@@ -33,8 +33,8 @@ class User extends Authenticatable
     /**
      * Get the client that owns the user.
      */
-    public function cliente()
+    public function customer()
     {
-        return $this->hasOne('App\Cliente');
+        return $this->hasOne('App\Models\Customer');
     }
 }

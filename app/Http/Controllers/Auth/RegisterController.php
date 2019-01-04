@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use App\Models\Customer;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -29,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -49,17 +50,19 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+       return Validator::make($data, [
             'first_name'        => 'required|string|max:255',
             'first_surname'     => 'required|string|max:255',
             'second_surname'    => 'required|string|max:255',
-            'email'             => 'required|string|email|max:255|unique:users',
+            'email'             => 'required|string|email|max:192|unique:users',
             'phone'             => 'required|string|max:11',
             'province'          => 'required',
             'canton'            => 'required',
             'district'          => 'required',
-            'password'          => 'required|string|min:6|confirmed',
+            'password'          => 'required|string|min:8|confirmed|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[.,;!$#%@*-\/_+&()=]).*$/',
+            'address_line'      => 'nullable|string|max:255',
         ]);
+
     }
 
     /**
@@ -70,28 +73,32 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name'      => $data['first_name'] . ' ' . $data['first_surname'],
-            'email'     => $data['email'],
-            'password'  => Hash::make($data['password']),
-        ]);
+        $user = '';
 
-        $customer                   = new Customer();
-        $customer->first_name       = $data['first_name'];
-        $customer->first_surname    = $data['first_surname'];
-        $customer->second_surname   = $data['second_surname'];
-        $customer->email            = $data['email'];
-        $customer->district_id      = $data['district'];
-        $customer->address_line     = $data['address_line'];
-        $customer->user_id          = $user->id;
+        // &$User the changes made inside the function will reflect in the variables ($user that is out of the transaction function) because '&' creates a reference of the variable.
+        DB::transaction(function () use ($data, &$user) {
+            $user = User::create([
+                'name'          => $data['first_name'] . ' ' . $data['first_surname'] .' '. $data['second_surname'],
+                'email'         => $data['email'],
+                'password'      => Hash::make($data['password']),
+            ]);
 
-        $customer->save();
+            Customer::create([
+                'first_name'        => $data['first_name'],
+                'first_surname'     => $data['first_surname'],
+                'second_surname'    => $data['second_surname'],
+                'phone'             => $data['phone'],
+                'email'             => $data['email'],
+                'district_id'       => $data['district'],
+                'address_line'      => $data['address_line'],
+                'user_id'           => $user->id,
+            ]);
 
-        //Attach Customer role
-        $user->roles()->attach(4);
+            //Attach Customer role
+            $user->roles()->attach(4);
+
+        });
 
         return $user;
-
-
     }
 }

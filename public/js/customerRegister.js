@@ -17,12 +17,7 @@ $(document).ready(function () {
     });
 
     function updateZone(data) {
-        console.log(data);
         $.ajax({
-            //Como se ejecuta un POST necesitamos el token de CSRF, (lo tomamos de un meta que esta en el blade)
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
             // En data puedes utilizar un objeto JSON, un array o un query string
             data: data,
             //Cambiar a type: POST si necesario
