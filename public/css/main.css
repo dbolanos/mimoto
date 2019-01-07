@@ -1761,6 +1761,14 @@ height: 30px;
           transition-duration: 0.8s;
 }
 
+/*Options Customer*/
+.option_customer{
+	color: #8ac058;
+}
+
+.menu_login{
+	background-color: #333;
+}
 
 
 /*START CSS BOXES*/
@@ -1860,5 +1868,7 @@ height: 30px;
 /*END CSS BOXES*/
 
 
-
+.invalid-feedback{
+	color: darkred;
+}
 

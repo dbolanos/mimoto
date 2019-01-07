@@ -20,8 +20,14 @@
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
+                    <div class="dropdown-menu dropdown-menu-right menu_login" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item option_customer" href="{{route('change.password')}}">
+                            <i class="fas fa-key"></i> Cambiar Contraseña
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item option_customer" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}

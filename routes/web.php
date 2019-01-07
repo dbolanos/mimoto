@@ -22,7 +22,9 @@ Auth::routes();
 
 
 // Crear Usuario y Cliente
-Route::get('cliente-registro',      ['as' => 'cliente.registro'         , 'uses'  => 'CustomerController@customerRegister']);
+Route::get('cliente-registro',          ['as' => 'cliente.registro'         , 'uses'  => 'CustomerController@customerRegister']);
+Route::get('cambiar-contrasenna',       ['as' => 'change.password'          , 'uses'  => 'UserController@changePassword']);
+Route::post('actualizar-contrasenna',   ['as' => 'update.password'          , 'uses'  => 'UserController@updatePassword']);
 
 //Get Cantones and Districts by Province
 Route::get('get-cantons-districts', ['as' => 'get-cantons-districts'    , 'uses'  => 'DistrictController@getCantonsDistricts']);
