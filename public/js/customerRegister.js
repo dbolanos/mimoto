@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#province').on('click', function () {
+    $('#province').on('change', function () {
         data = {};
         console.log('Checking Canton and District...');
         data.province_id = $('#province').val();
@@ -8,7 +8,7 @@ $(document).ready(function () {
         updateZone(data);
     });
 
-    $('#canton').on('click', function () {
+    $('#canton').on('change', function () {
         data = {};
         console.log('Checking Districts...');
         data.canton_id = $('#canton').val();
